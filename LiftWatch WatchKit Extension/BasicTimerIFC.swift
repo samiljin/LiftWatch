@@ -14,6 +14,7 @@ class BasicTimerIFC: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        removeTitle()
         
         // Configure interface objects here.
     }

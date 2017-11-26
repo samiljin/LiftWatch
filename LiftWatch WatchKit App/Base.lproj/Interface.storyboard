@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eMi-nD-4Rz">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,11 +24,51 @@
             </objects>
             <point key="canvasLocation" x="-42" y="141"/>
         </scene>
-        <!--Sequence TimerIFC-->
+        <!--Interval TimerIFC-->
         <scene sceneID="cEH-by-BG2">
             <objects>
-                <controller id="xgr-19-g2a" customClass="SequenceTimerIFC" customModule="LiftWatch_WatchKit_Extension">
+                <controller id="xgr-19-g2a" customClass="IntervalTimerIFC" customModule="LiftWatch_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.69999999999999996" alignment="left" id="Uyx-6d-4Sv">
+                            <items>
+                                <group width="0.5" height="1" alignment="left" id="kds-Xq-wYV">
+                                    <items>
+                                        <picker height="100" alignment="left" id="aVF-69-GPZ">
+                                            <connections>
+                                                <action selector="workoutTimerValueChanged:" destination="xgr-19-g2a" id="5a5-zJ-jbM"/>
+                                            </connections>
+                                        </picker>
+                                        <label width="1" height="1" alignment="left" hidden="YES" text="120" textAlignment="center" id="FTd-Zu-g9d">
+                                            <fontDescription key="font" type="system" pointSize="27"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="0.5" height="1" alignment="right" id="i5U-nc-nSJ">
+                                    <items>
+                                        <label width="1" height="1" alignment="left" hidden="YES" text="0" textAlignment="center" id="g05-vL-0SS">
+                                            <fontDescription key="font" type="system" pointSize="27"/>
+                                        </label>
+                                        <picker height="100" alignment="left" id="FLx-gU-3ed">
+                                            <connections>
+                                                <action selector="restTimerValueChanged:" destination="xgr-19-g2a" id="EPK-4C-mYz"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Start" id="beK-Zf-Usu">
+                            <connections>
+                                <action selector="buttonClicked" destination="xgr-19-g2a" id="Ett-2d-1hx"/>
+                            </connections>
+                        </button>
+                    </items>
                     <connections>
+                        <outlet property="button" destination="beK-Zf-Usu" id="QHp-jX-VkN"/>
+                        <outlet property="restTimeLabel" destination="g05-vL-0SS" id="Nj9-Dz-Yje"/>
+                        <outlet property="restTimePicker" destination="FLx-gU-3ed" id="hfv-ff-q3s"/>
+                        <outlet property="workoutTimeLabel" destination="FTd-Zu-g9d" id="JGJ-wj-hfh"/>
+                        <outlet property="workoutTimePicker" destination="aVF-69-GPZ" id="ugt-y4-tLw"/>
                         <segue destination="eMi-nD-4Rz" kind="relationship" relationship="nextPage" id="dX7-QA-grg"/>
                     </connections>
                 </controller>
@@ -42,20 +82,34 @@
                     <items>
                         <group width="1" height="0.5" alignment="left" id="K2O-ax-3CL">
                             <items>
-                                <label width="1" height="1" alignment="left" text="Label" textAlignment="center" id="6t9-3d-lhn">
-                                    <fontDescription key="font" type="boldSystem" pointSize="30"/>
+                                <label width="1" height="1" alignment="left" text="--" textAlignment="center" id="6t9-3d-lhn">
+                                    <color key="textColor" red="1" green="0.084040851149999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="42"/>
                                 </label>
                             </items>
                         </group>
-                        <group width="1" height="0.5" alignment="left" id="JOE-H1-4xw">
+                        <group width="1" height="0.45000000000000001" alignment="left" layout="vertical" id="JOE-H1-4xw">
                             <items>
-                                <timer width="1" height="1" alignment="left" textAlignment="center" id="bT2-ri-tC9">
-                                    <fontDescription key="font" type="boldSystem" pointSize="26"/>
-                                </timer>
+                                <label width="1" height="0.5" alignment="center" verticalAlignment="center" text="00:00:00" textAlignment="center" id="aIG-24-rB5">
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </label>
+                                <label width="1" height="0.5" alignment="center" verticalAlignment="center" text="00:00:00" textAlignment="center" id="Hv5-Cp-zAT">
+                                    <gestureRecognizers>
+                                        <tapGestureRecognizer id="INT-CC-qMi">
+                                            <connections>
+                                                <action selector="restTimerTapped:" destination="eMi-nD-4Rz" id="CHc-gK-vPE"/>
+                                            </connections>
+                                        </tapGestureRecognizer>
+                                    </gestureRecognizers>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </label>
                             </items>
                         </group>
                     </items>
                     <connections>
+                        <outlet property="elapsedTimeLabel" destination="aIG-24-rB5" id="3A9-e3-bZP"/>
+                        <outlet property="hearthRateLabel" destination="6t9-3d-lhn" id="ivT-hP-z3c"/>
+                        <outlet property="restTimerLabel" destination="Hv5-Cp-zAT" id="Nzz-0o-Gkg"/>
                         <segue destination="t10-gF-fWx" kind="relationship" relationship="nextPage" id="Mdm-Ia-3nS"/>
                     </connections>
                 </controller>

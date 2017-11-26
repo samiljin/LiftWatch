@@ -23,10 +23,12 @@
 		BF42BAB11FB3A091008203B5 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF42BAB01FB3A091008203B5 /* ComplicationController.swift */; };
 		BF42BAB31FB3A091008203B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF42BAB21FB3A091008203B5 /* Assets.xcassets */; };
 		BF42BAC61FB740BE008203B5 /* HeartRateIFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF42BAC51FB740BE008203B5 /* HeartRateIFC.swift */; };
-		BF42BAC81FB740D3008203B5 /* SequenceTimerIFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF42BAC71FB740D3008203B5 /* SequenceTimerIFC.swift */; };
+		BF42BAC81FB740D3008203B5 /* IntervalTimerIFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF42BAC71FB740D3008203B5 /* IntervalTimerIFC.swift */; };
 		BF42BACA1FB740E3008203B5 /* BasicTimerIFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF42BAC91FB740E3008203B5 /* BasicTimerIFC.swift */; };
+		BFBF8EC61FCB58FD002BBCF2 /* WKInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBF8EC51FCB58FD002BBCF2 /* WKInterfaceController.swift */; };
 		BFD97B171FB9FFDE00961523 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD97B161FB9FFDE00961523 /* HealthManager.swift */; };
 		BFD97B1C1FBB784400961523 /* HKQuantityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD97B1B1FBB784400961523 /* HKQuantityType.swift */; };
+		BFD97B251FC22B3D00961523 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD97B241FC22B3D00961523 /* Int.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,10 +96,12 @@
 		BF42BAB21FB3A091008203B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF42BAB41FB3A091008203B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF42BAC51FB740BE008203B5 /* HeartRateIFC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartRateIFC.swift; sourceTree = "<group>"; };
-		BF42BAC71FB740D3008203B5 /* SequenceTimerIFC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTimerIFC.swift; sourceTree = "<group>"; };
+		BF42BAC71FB740D3008203B5 /* IntervalTimerIFC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalTimerIFC.swift; sourceTree = "<group>"; };
 		BF42BAC91FB740E3008203B5 /* BasicTimerIFC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTimerIFC.swift; sourceTree = "<group>"; };
+		BFBF8EC51FCB58FD002BBCF2 /* WKInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKInterfaceController.swift; sourceTree = "<group>"; };
 		BFD97B161FB9FFDE00961523 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		BFD97B1B1FBB784400961523 /* HKQuantityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKQuantityType.swift; sourceTree = "<group>"; };
+		BFD97B241FC22B3D00961523 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +189,7 @@
 				BF42BAB21FB3A091008203B5 /* Assets.xcassets */,
 				BF42BAB41FB3A091008203B5 /* Info.plist */,
 				BF42BAC51FB740BE008203B5 /* HeartRateIFC.swift */,
-				BF42BAC71FB740D3008203B5 /* SequenceTimerIFC.swift */,
+				BF42BAC71FB740D3008203B5 /* IntervalTimerIFC.swift */,
 				BF42BAC91FB740E3008203B5 /* BasicTimerIFC.swift */,
 				BFD97B161FB9FFDE00961523 /* HealthManager.swift */,
 			);
@@ -196,6 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				BFD97B1B1FBB784400961523 /* HKQuantityType.swift */,
+				BFD97B241FC22B3D00961523 /* Int.swift */,
+				BFBF8EC51FCB58FD002BBCF2 /* WKInterfaceController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -357,12 +363,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF42BAC81FB740D3008203B5 /* SequenceTimerIFC.swift in Sources */,
+				BF42BAC81FB740D3008203B5 /* IntervalTimerIFC.swift in Sources */,
+				BFBF8EC61FCB58FD002BBCF2 /* WKInterfaceController.swift in Sources */,
 				BF42BAAF1FB3A091008203B5 /* ExtensionDelegate.swift in Sources */,
 				BF42BAAD1FB3A091008203B5 /* InterfaceController.swift in Sources */,
 				BFD97B1C1FBB784400961523 /* HKQuantityType.swift in Sources */,
 				BF42BAB11FB3A091008203B5 /* ComplicationController.swift in Sources */,
 				BF42BAC61FB740BE008203B5 /* HeartRateIFC.swift in Sources */,
+				BFD97B251FC22B3D00961523 /* Int.swift in Sources */,
 				BF42BACA1FB740E3008203B5 /* BasicTimerIFC.swift in Sources */,
 				BFD97B171FB9FFDE00961523 /* HealthManager.swift in Sources */,
 			);
