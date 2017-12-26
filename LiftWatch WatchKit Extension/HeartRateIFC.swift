@@ -66,6 +66,24 @@ class HeartRateIFC: WKInterfaceController {
         HealthManager.shared.start(session: workoutSession!)
     }
     
+    @IBAction func saveItemTapped() {
+        endWorkout(save: true)
+    }
+    
+    @IBAction func deleteItemTapped() {
+        endWorkout(save: false)
+    }
+    
+    private func endWorkout(save: Bool) {
+        HealthManager.shared.end(session: workoutSession!)
+        
+        if save {
+            HealthManager.shared.saveWorkout()
+        }
+        
+        dismiss()
+    }
+    
     private func updateTimeLabels() {
         let (hours, minutes, seconds) = elapsedTimeInSeconds.secondsToElapsedTimeFormat()
         let formattedTime = String(format: "%02i:%02i:%02i", hours, minutes, seconds)

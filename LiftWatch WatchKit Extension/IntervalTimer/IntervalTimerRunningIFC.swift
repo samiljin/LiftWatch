@@ -25,13 +25,32 @@ class IntervalTimerRunningIFC : WKInterfaceController {
         guard let intervalTimes = context as? IntervalTimes else { fatalError() }
         
         self.intervalTimes = intervalTimes
-        startTimer()
-        updateTimeLeftLabel()
+        showCountdown()
+    }
+    
+    private func showCountdown() {
+        var count = 0
+        let countTo = countdown.count
+
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {
+            [unowned self] timer in
+            self.timeLeftLabel.setText(self.countdown[count])
+            
+            count += 1
+            if count == countTo {
+                timer.invalidate()
+                self.startTimer()
+            }
+        }
     }
     
     private func startTimer() {
+        vibrate()
+
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {
             [unowned self] _ in
+            
+            self.updateTimeLeftLabel()
             
             switch self.currentTimerType {
             case .workout:
@@ -39,8 +58,7 @@ class IntervalTimerRunningIFC : WKInterfaceController {
             case .rest:
                 self.elapsedTimes.restTime += 1
             }
-            
-            self.updateTimeLeftLabel()
+        
             self.updateCurrentTimerType()
         }
     }
@@ -65,14 +83,21 @@ class IntervalTimerRunningIFC : WKInterfaceController {
 
             elapsedTimes.workoutTime = 0
             currentTimerType = .rest
+            vibrate()
         case .rest:
             guard intervalTimes!.restTime - elapsedTimes.restTime == 0 else { return }
 
             elapsedTimes.restTime = 0
             currentTimerType = .workout
+            vibrate()
         }
     }
     
+    private func vibrate() {
+        WKInterfaceDevice.current().play(.failure)
+    }
+    
+    private var countdown: [String] = ["☝🏻", "✌🏻", "💪🏻"]
     private var currentTimerType: CurrentTimerType = .workout
     private weak var timer: Timer?
     private var intervalTimes: IntervalTimes?

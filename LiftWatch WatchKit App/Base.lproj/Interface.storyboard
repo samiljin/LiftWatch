@@ -72,7 +72,7 @@
             <objects>
                 <controller id="fyl-ht-SJW" customClass="IntervalTimerRunningIFC" customModule="LiftWatch_WatchKit_Extension">
                     <items>
-                        <label width="1" widthAdjustment="1" height="1" alignment="left" text="120" textAlignment="center" id="8Qk-Pd-3iL">
+                        <label width="1" widthAdjustment="1" height="1" alignment="left" text="✊🏻" textAlignment="center" id="8Qk-Pd-3iL">
                             <fontDescription key="font" type="boldSystem" pointSize="65"/>
                         </label>
                     </items>
@@ -114,6 +114,25 @@
                             </items>
                         </group>
                     </items>
+                    <menu key="menu" id="4mF-Kr-qvY">
+                        <items>
+                            <menuItem title="Save" icon="accept" id="Lo7-ZM-uuh">
+                                <connections>
+                                    <action selector="saveItemTapped" destination="eMi-nD-4Rz" id="JiJ-Aw-V2y"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Delete" icon="trash" id="eUK-th-y9B">
+                                <connections>
+                                    <action selector="deleteItemTapped" destination="eMi-nD-4Rz" id="tTl-FA-eV9"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Cancel" icon="decline" id="MU4-yB-y5Z">
+                                <connections>
+                                    <action selector="cancelItemTapped" destination="eMi-nD-4Rz" id="jza-tp-Vsx"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="elapsedTimeLabel" destination="aIG-24-rB5" id="3A9-e3-bZP"/>
                         <outlet property="hearthRateLabel" destination="6t9-3d-lhn" id="ivT-hP-z3c"/>

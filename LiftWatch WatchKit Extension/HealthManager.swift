@@ -26,6 +26,14 @@ class HealthManager {
     func start(session: HKWorkoutSession) {
         healthStore.start(session)
     }
+
+    func end(session: HKWorkoutSession) {
+        healthStore.end(session)
+    }
+    
+    func saveWorkout() {
+        
+    }
     
     func startHearthRateQuery(from: Date, onUpdate: @escaping ([HKQuantitySample]) -> Void) {
         let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [
