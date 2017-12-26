@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-42" y="141"/>
         </scene>
-        <!--Interval TimerIFC-->
+        <!--Interval Timer SetupIFC-->
         <scene sceneID="cEH-by-BG2">
             <objects>
-                <controller id="xgr-19-g2a" customClass="IntervalTimerIFC" customModule="LiftWatch_WatchKit_Extension">
+                <controller id="xgr-19-g2a" customClass="IntervalTimerSetupIFC" customModule="LiftWatch_WatchKit_Extension">
                     <items>
                         <group width="1" height="0.69999999999999996" alignment="left" id="Uyx-6d-4Sv">
                             <items>
@@ -38,16 +38,10 @@
                                                 <action selector="workoutTimerValueChanged:" destination="xgr-19-g2a" id="5a5-zJ-jbM"/>
                                             </connections>
                                         </picker>
-                                        <label width="1" height="1" alignment="left" hidden="YES" text="120" textAlignment="center" id="FTd-Zu-g9d">
-                                            <fontDescription key="font" type="system" pointSize="27"/>
-                                        </label>
                                     </items>
                                 </group>
                                 <group width="0.5" height="1" alignment="right" id="i5U-nc-nSJ">
                                     <items>
-                                        <label width="1" height="1" alignment="left" hidden="YES" text="0" textAlignment="center" id="g05-vL-0SS">
-                                            <fontDescription key="font" type="system" pointSize="27"/>
-                                        </label>
                                         <picker height="100" alignment="left" id="FLx-gU-3ed">
                                             <connections>
                                                 <action selector="restTimerValueChanged:" destination="xgr-19-g2a" id="EPK-4C-mYz"/>
@@ -59,21 +53,35 @@
                         </group>
                         <button width="1" alignment="left" title="Start" id="beK-Zf-Usu">
                             <connections>
-                                <action selector="buttonClicked" destination="xgr-19-g2a" id="Ett-2d-1hx"/>
+                                <segue destination="fyl-ht-SJW" kind="modal" identifier="StartIntervarTimerSeguence" id="MSm-rb-V9v"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
                         <outlet property="button" destination="beK-Zf-Usu" id="QHp-jX-VkN"/>
-                        <outlet property="restTimeLabel" destination="g05-vL-0SS" id="Nj9-Dz-Yje"/>
                         <outlet property="restTimePicker" destination="FLx-gU-3ed" id="hfv-ff-q3s"/>
-                        <outlet property="workoutTimeLabel" destination="FTd-Zu-g9d" id="JGJ-wj-hfh"/>
                         <outlet property="workoutTimePicker" destination="aVF-69-GPZ" id="ugt-y4-tLw"/>
                         <segue destination="eMi-nD-4Rz" kind="relationship" relationship="nextPage" id="dX7-QA-grg"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="371" y="-152"/>
+        </scene>
+        <!--Interval Timer RunningIFC-->
+        <scene sceneID="gYC-wv-O2A">
+            <objects>
+                <controller id="fyl-ht-SJW" customClass="IntervalTimerRunningIFC" customModule="LiftWatch_WatchKit_Extension">
+                    <items>
+                        <label width="1" widthAdjustment="1" height="1" alignment="left" text="120" textAlignment="center" id="8Qk-Pd-3iL">
+                            <fontDescription key="font" type="boldSystem" pointSize="65"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="timeLeftLabel" destination="8Qk-Pd-3iL" id="Yil-wi-3i2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="704" y="-152"/>
         </scene>
         <!--Heart RateIFC-->
         <scene sceneID="MfG-8c-tOc">
