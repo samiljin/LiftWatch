@@ -26,6 +26,14 @@ class HealthManager {
     func start(session: HKWorkoutSession) {
         healthStore.start(session)
     }
+
+    func end(session: HKWorkoutSession) {
+        healthStore.end(session)
+    }
+    
+    func saveWorkout() {
+        
+    }
     
     func startHearthRateQuery(from: Date, onUpdate: @escaping ([HKQuantitySample]) -> Void) {
         let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [
@@ -35,7 +43,8 @@ class HealthManager {
             _, samples, _, _, error in
             
             guard let samples = samples as? [HKQuantitySample] else {
-                fatalError("HearthRate results couldn't be converted to [HKQuantitySample]")
+                // TODO: handle this case.
+                return
             }
             
             onUpdate(samples)
