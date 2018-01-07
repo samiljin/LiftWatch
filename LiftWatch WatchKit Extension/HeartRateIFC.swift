@@ -10,9 +10,9 @@ import WatchKit
 import HealthKit
 import Foundation
 
-
 class HeartRateIFC: WKInterfaceController {
 
+    @IBOutlet var heartIcon: WKInterfaceImage!
     @IBOutlet var elapsedTimeLabel: WKInterfaceLabel!
     @IBOutlet var hearthRateLabel: WKInterfaceLabel!
     @IBOutlet var restTimerLabel: WKInterfaceLabel!
@@ -48,6 +48,9 @@ class HeartRateIFC: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        // TODO: This is not needed. Only for simulator dev purposes.
+        animateHeartWith(bpm: 60)
     }
 
     override func didDeactivate() {
@@ -80,8 +83,29 @@ class HeartRateIFC: WKInterfaceController {
         if save {
             HealthManager.shared.saveWorkout()
         }
-        
+            
         dismiss()
+    }
+    
+    private func animateHeartWith(bpm: Int) {
+        let duration: Double = 60.0 / Double(bpm)
+        let growDuration: Double = duration * 0.3
+        let normalizeDuration: Double = duration * 0.7
+        
+        animate(withDuration: growDuration) {
+            [unowned self] in
+            self.heartIcon.setRelativeWidth(1, withAdjustment: 0)
+            DispatchQueue.main.asyncAfter(deadline: .now() + growDuration) {
+                self.animate(withDuration: normalizeDuration) {
+                    [unowned self] in
+                    self.heartIcon.setRelativeWidth(0.7, withAdjustment: 0)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + normalizeDuration) {
+                        [unowned self] in
+                        self.animateHeartWith(bpm: self.currentBpm)
+                    }
+                }
+            }
+        }
     }
     
     private func updateTimeLabels() {
@@ -94,17 +118,11 @@ class HeartRateIFC: WKInterfaceController {
         restTimerLabel.setText(formatted)
     }
     
-    private func updateBpmLabel(quantity: HKQuantity) {
-        let bpm = Int(quantity.doubleValue(for: HKUnit(from: "count/min")))
-        self.hearthRateLabel.setText("\(bpm)")
-    }
-    
     fileprivate func observeHearthRate() {
         HealthManager.shared.startHearthRateQuery(from: Date()) {
             [unowned self] samples in
-            
             guard let quantity = samples.last?.quantity else { return }
-            self.updateBpmLabel(quantity: quantity)
+            self.currentBpm = Int(quantity.doubleValue(for: HKUnit(from: "count/min")))
         }
     }
     
@@ -116,6 +134,12 @@ class HeartRateIFC: WKInterfaceController {
         return config
     }
     
+    private var currentBpm = 60 {
+        didSet {
+            self.hearthRateLabel.setText("\(currentBpm)")
+            self.animateHeartWith(bpm: currentBpm)
+        }
+    }
     private var elapsedTimeInSeconds = 0
     private var elapsedRestTime = 0
     private var restTimerActive = false

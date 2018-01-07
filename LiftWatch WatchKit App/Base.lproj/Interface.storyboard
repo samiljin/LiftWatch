@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -88,20 +88,39 @@
             <objects>
                 <controller id="eMi-nD-4Rz" customClass="HeartRateIFC" customModule="LiftWatch_WatchKit_Extension">
                     <items>
-                        <group width="1" height="0.5" alignment="left" id="K2O-ax-3CL">
+                        <group width="1" height="0.40000000000000002" alignment="left" id="YvC-6V-bTU">
                             <items>
-                                <label width="1" height="1" alignment="left" text="--" textAlignment="center" id="6t9-3d-lhn">
+                                <group width="0.29999999999999999" height="1" alignment="left" id="0so-EB-nZb">
+                                    <items>
+                                        <imageView width="0.69999999999999996" alignment="center" verticalAlignment="center" image="heart" contentMode="scaleAspectFit" id="3DX-E3-nQu">
+                                            <color key="tintColor" red="1" green="0.1543370255" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                    </items>
+                                </group>
+                                <label width="0.75" height="1" alignment="left" verticalAlignment="center" text="120" textAlignment="left" id="6t9-3d-lhn">
                                     <color key="textColor" red="1" green="0.084040851149999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="font" type="boldSystem" pointSize="42"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="70"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="boldSystem" pointSize="58"/>
+                                    </variation>
                                 </label>
                             </items>
                         </group>
-                        <group width="1" height="0.45000000000000001" alignment="left" layout="vertical" id="JOE-H1-4xw">
+                        <group width="1" height="0.20000000000000001" alignment="left" id="3Ts-La-X3r">
                             <items>
-                                <label width="1" height="0.5" alignment="center" verticalAlignment="center" text="00:00:00" textAlignment="center" id="aIG-24-rB5">
-                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                <label width="1" height="1" alignment="center" verticalAlignment="center" text="00:00:00" textAlignment="left" id="aIG-24-rB5">
+                                    <color key="textColor" red="0.98331991249999995" green="1" blue="0.28556338780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="32"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="boldSystem" pointSize="26"/>
+                                    </variation>
                                 </label>
-                                <label width="1" height="0.5" alignment="center" verticalAlignment="center" text="00:00:00" textAlignment="center" id="Hv5-Cp-zAT">
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="0Ew-Ck-mJf">
+                            <items>
+                                <label alignment="left" text="rest time" id="Rif-uQ-pCu"/>
+                                <label width="1" height="1" alignment="center" verticalAlignment="center" text="00:00:00" textAlignment="left" id="Hv5-Cp-zAT">
                                     <gestureRecognizers>
                                         <tapGestureRecognizer id="INT-CC-qMi">
                                             <connections>
@@ -109,7 +128,28 @@
                                             </connections>
                                         </tapGestureRecognizer>
                                     </gestureRecognizers>
-                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="32"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="boldSystem" pointSize="26"/>
+                                    </variation>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="245-ZJ-nMH">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="0" textAlignment="left" id="AMi-J2-bT4">
+                                    <fontDescription key="font" type="boldSystem" pointSize="32"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="boldSystem" pointSize="26"/>
+                                    </variation>
+                                </label>
+                                <label alignment="left" verticalAlignment="center" text="kcal" textAlignment="left" id="RSF-Ub-f1N">
+                                    <color key="textColor" red="0.99345549740000005" green="0.99345549740000005" blue="0.99345549740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="33"/>
+                                    <variation key="device=watch38mm">
+                                        <fontDescription key="font" type="system" weight="medium" pointSize="26"/>
+                                    </variation>
                                 </label>
                             </items>
                         </group>
@@ -135,18 +175,21 @@
                     </menu>
                     <connections>
                         <outlet property="elapsedTimeLabel" destination="aIG-24-rB5" id="3A9-e3-bZP"/>
+                        <outlet property="heartIcon" destination="3DX-E3-nQu" id="d5N-tK-3d1"/>
                         <outlet property="hearthRateLabel" destination="6t9-3d-lhn" id="ivT-hP-z3c"/>
                         <outlet property="restTimerLabel" destination="Hv5-Cp-zAT" id="Nzz-0o-Gkg"/>
                         <segue destination="t10-gF-fWx" kind="relationship" relationship="nextPage" id="Mdm-Ia-3nS"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="371" y="259"/>
+            <point key="canvasLocation" x="371" y="258.5"/>
         </scene>
         <!--Basic TimerIFC-->
         <scene sceneID="G4V-zc-U5S">
             <objects>
-                <controller id="t10-gF-fWx" customClass="BasicTimerIFC" customModule="LiftWatch_WatchKit_Extension"/>
+                <controller id="t10-gF-fWx" customClass="BasicTimerIFC" customModule="LiftWatch_WatchKit_Extension">
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                </controller>
             </objects>
             <point key="canvasLocation" x="371" y="631"/>
         </scene>
