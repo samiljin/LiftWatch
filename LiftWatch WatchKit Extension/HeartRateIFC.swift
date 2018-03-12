@@ -16,7 +16,8 @@ class HeartRateIFC: WKInterfaceController {
     @IBOutlet var elapsedTimeLabel: WKInterfaceLabel!
     @IBOutlet var hearthRateLabel: WKInterfaceLabel!
     @IBOutlet var restTimerLabel: WKInterfaceLabel!
-    
+    @IBOutlet var caloriesBurnedLabel: WKInterfaceLabel!
+
     @IBAction func restTimerTapped(_ sender: Any) {
         restTimerActive = !restTimerActive
         
@@ -34,14 +35,22 @@ class HeartRateIFC: WKInterfaceController {
         WKExtension.shared().delegate = self
         
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {
-            [unowned self] _ in
-            self.elapsedTimeInSeconds += 1
+            [weak self] _ in
+            guard self != nil else { return }
+
+            self!.elapsedTimeInSeconds += 1
             
-            if self.restTimerActive {
-                self.elapsedRestTime += 1
+            if self!.restTimerActive {
+                self!.elapsedRestTime += 1
             }
             
-            self.updateTimeLabels()
+            self!.updateTimeLabels()
+        }
+        
+        HealthManager.shared.startKcalQuery()
+        HealthManager.shared.kcalObserver.onCaloriesUpdated = {
+            [weak self] activeCalories in
+            self?.caloriesBurnedLabel.setText("\(activeCalories)")
         }
     }
 
@@ -88,24 +97,24 @@ class HeartRateIFC: WKInterfaceController {
     }
     
     private func animateHeartWith(bpm: Int) {
-        let duration: Double = 60.0 / Double(bpm)
-        let growDuration: Double = duration * 0.3
-        let normalizeDuration: Double = duration * 0.7
-        
-        animate(withDuration: growDuration) {
-            [unowned self] in
-            self.heartIcon.setRelativeWidth(1, withAdjustment: 0)
-            DispatchQueue.main.asyncAfter(deadline: .now() + growDuration) {
-                self.animate(withDuration: normalizeDuration) {
-                    [unowned self] in
-                    self.heartIcon.setRelativeWidth(0.7, withAdjustment: 0)
-                    DispatchQueue.main.asyncAfter(deadline: .now() + normalizeDuration) {
-                        [unowned self] in
-                        self.animateHeartWith(bpm: self.currentBpm)
-                    }
-                }
-            }
-        }
+//        let duration: Double = 60.0 / Double(bpm)
+//        let growDuration: Double = duration * 0.3
+//        let normalizeDuration: Double = duration * 0.7
+//
+//        animate(withDuration: growDuration) {
+//            [unowned self] in
+//            self.heartIcon.setRelativeWidth(1, withAdjustment: 0)
+//            DispatchQueue.main.asyncAfter(deadline: .now() + growDuration) {
+//                self.animate(withDuration: normalizeDuration) {
+//                    [unowned self] in
+//                    self.heartIcon.setRelativeWidth(0.7, withAdjustment: 0)
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + normalizeDuration) {
+//                        [unowned self] in
+//                        self.animateHeartWith(bpm: self.currentBpm)
+//                    }
+//                }
+//            }
+//        }
     }
     
     private func updateTimeLabels() {
@@ -120,9 +129,9 @@ class HeartRateIFC: WKInterfaceController {
     
     fileprivate func observeHearthRate() {
         HealthManager.shared.startHearthRateQuery(from: Date()) {
-            [unowned self] samples in
+            [weak self] samples in
             guard let quantity = samples.last?.quantity else { return }
-            self.currentBpm = Int(quantity.doubleValue(for: HKUnit(from: "count/min")))
+            self?.currentBpm = Int(quantity.doubleValue(for: HKUnit(from: "count/min")))
         }
     }
     
@@ -137,7 +146,6 @@ class HeartRateIFC: WKInterfaceController {
     private var currentBpm = 60 {
         didSet {
             self.hearthRateLabel.setText("\(currentBpm)")
-            self.animateHeartWith(bpm: currentBpm)
         }
     }
     private var elapsedTimeInSeconds = 0
@@ -149,6 +157,7 @@ extension HeartRateIFC : HKWorkoutSessionDelegate {
     func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState, from fromState: HKWorkoutSessionState, date: Date) {
         if toState == .running {
             observeHearthRate()
+            HealthManager.shared.startKcalQuery()
         }
     }
     
@@ -159,23 +168,23 @@ extension HeartRateIFC : HKWorkoutSessionDelegate {
 
 extension HeartRateIFC : WKExtensionDelegate {
     func applicationDidFinishLaunching() {
-        print("DidFinishLaunching")
+//        print("DidFinishLaunching")
     }
     
     func applicationDidBecomeActive() {
-        print("DidBecomeActive")
+//        print("DidBecomeActive")
     }
     
     func applicationWillResignActive() {
-        print("WillResignActive")
+//        print("WillResignActive")
     }
     
     func applicationWillEnterForeground() {
-        print("WillEnterForeground")
+//        print("WillEnterForeground")
     }
     
     func applicationDidEnterBackground() {
-        print("DidEnterBackground")
+//        print("DidEnterBackground")
     }
 }
 

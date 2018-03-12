@@ -13,4 +13,8 @@ extension HKQuantityType {
     static var hearthRate: HKQuantityType {
         return HKObjectType.quantityType(forIdentifier: .heartRate)!
     }
+    
+    static var kcal: HKQuantityType {
+        return HKObjectType.quantityType(forIdentifier: .activeEnergyBurned)!
+    }
 }

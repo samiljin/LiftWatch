@@ -27,7 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let healthStore = HKHealthStore()
         
         // Is it enough to just read hearth rate and write workout?
-        let types = Set([HKObjectType.workoutType(), HKObjectType.quantityType(forIdentifier: .heartRate)!])
+        let types = Set(
+            [
+                HKObjectType.workoutType(),
+                HKObjectType.quantityType(forIdentifier: .heartRate)!,
+                HKObjectType.quantityType(forIdentifier: .activeEnergyBurned)!
+            ])
         
         healthStore.requestAuthorization(toShare: types, read: types) {
             accepted, error in
