@@ -12,17 +12,28 @@ import Foundation
 
 class HeartRateIFC: WKInterfaceController {
 
+    // TODO:
+    // start rest time button -> Liu'uta oikealle pausebuttonin kokoiseksi ja häivytä
+    // Implemetoi rest timer label
+    // Implementoi pause button
+    
     @IBOutlet var heartIcon: WKInterfaceImage!
     @IBOutlet var elapsedTimeLabel: WKInterfaceLabel!
     @IBOutlet var hearthRateLabel: WKInterfaceLabel!
-    @IBOutlet var restTimerLabel: WKInterfaceLabel!
     @IBOutlet var caloriesBurnedLabel: WKInterfaceLabel!
 
-    @IBAction func restTimerTapped(_ sender: Any) {
-        restTimerActive = !restTimerActive
-        
-        if !restTimerActive {
-            elapsedRestTime = 0
+    @IBOutlet var restTimerGroup: WKInterfaceGroup!
+    @IBOutlet var restTimerLabel: WKInterfaceLabel!
+    @IBOutlet var startRestTimerButtonGroup: WKInterfaceGroup!
+    @IBOutlet var startRestTimerButton: WKInterfaceButton!
+    
+    @IBAction func startRestTimerButtonTapped() {
+        animate(withDuration: 0.4) {
+            [unowned self] in
+            self.startRestTimerButton.setTitle(nil)
+            self.restTimerGroup.setRelativeWidth(0.5, withAdjustment: 0)
+            self.restTimerGroup.setAlpha(1)
+            self.startRestTimerButtonGroup.setRelativeWidth(0.5, withAdjustment: 0)
         }
     }
     
@@ -122,9 +133,9 @@ class HeartRateIFC: WKInterfaceController {
         let formattedTime = String(format: "%02i:%02i:%02i", hours, minutes, seconds)
         elapsedTimeLabel.setText(formattedTime)
     
-        let (restHours, restMinutes, restSeconds) = elapsedRestTime.secondsToElapsedTimeFormat()
-        let formatted = String(format: "%02i:%02i:%02i", restHours, restMinutes, restSeconds)
-        restTimerLabel.setText(formatted)
+//        let (restHours, restMinutes, restSeconds) = elapsedRestTime.secondsToElapsedTimeFormat()
+//        let formatted = String(format: "%02i:%02i:%02i", restHours, restMinutes, restSeconds)
+//        restTimerLabel.setText(formatted)
     }
     
     fileprivate func observeHearthRate() {
