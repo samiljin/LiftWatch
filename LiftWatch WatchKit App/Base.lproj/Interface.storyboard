@@ -72,7 +72,7 @@
             <objects>
                 <controller id="fyl-ht-SJW" customClass="IntervalTimerRunningIFC" customModule="LiftWatch_WatchKit_Extension">
                     <items>
-                        <label width="1" widthAdjustment="1" height="1" alignment="left" text="✊🏻" textAlignment="center" id="8Qk-Pd-3iL">
+                        <label width="1" widthAdjustment="1" height="1" alignment="left" text="3" textAlignment="center" id="8Qk-Pd-3iL">
                             <fontDescription key="font" type="boldSystem" pointSize="65"/>
                         </label>
                     </items>
@@ -129,6 +129,15 @@
                                         <label alignment="left" text="00:00:00" id="fwp-hF-5uS"/>
                                     </items>
                                 </group>
+                                <group width="0.0" alignment="left" alpha="0.0" id="1JC-5F-aRf">
+                                    <items>
+                                        <button width="1" alignment="left" title="Stop" id="9mO-um-kVU">
+                                            <connections>
+                                                <action selector="stopRestTimerButtonTapped" destination="eMi-nD-4Rz" id="IvA-tz-8wT"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
                                 <group width="1" alignment="left" id="Uid-Qs-RVN">
                                     <items>
                                         <button width="1" alignment="left" title="Start rest timer" id="yLs-nN-piE">
@@ -169,6 +178,8 @@
                         <outlet property="restTimerLabel" destination="fwp-hF-5uS" id="qu8-Qv-sJo"/>
                         <outlet property="startRestTimerButton" destination="yLs-nN-piE" id="F30-HQ-Kwq"/>
                         <outlet property="startRestTimerButtonGroup" destination="Uid-Qs-RVN" id="R1Z-WF-egN"/>
+                        <outlet property="stopRestTimerButton" destination="9mO-um-kVU" id="lgk-qi-ZQ1"/>
+                        <outlet property="stopRestTimerButtonGroup" destination="1JC-5F-aRf" id="Vw4-x5-0jk"/>
                     </connections>
                 </controller>
             </objects>

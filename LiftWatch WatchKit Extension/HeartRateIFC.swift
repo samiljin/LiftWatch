@@ -11,11 +11,6 @@ import HealthKit
 import Foundation
 
 class HeartRateIFC: WKInterfaceController {
-
-    // TODO:
-    // start rest time button -> Liu'uta oikealle pausebuttonin kokoiseksi ja häivytä
-    // Implemetoi rest timer label
-    // Implementoi pause button
     
     @IBOutlet var heartIcon: WKInterfaceImage!
     @IBOutlet var elapsedTimeLabel: WKInterfaceLabel!
@@ -24,19 +19,20 @@ class HeartRateIFC: WKInterfaceController {
 
     @IBOutlet var restTimerGroup: WKInterfaceGroup!
     @IBOutlet var restTimerLabel: WKInterfaceLabel!
+    @IBOutlet var stopRestTimerButtonGroup: WKInterfaceGroup!
+    @IBOutlet var stopRestTimerButton: WKInterfaceButton!
     @IBOutlet var startRestTimerButtonGroup: WKInterfaceGroup!
     @IBOutlet var startRestTimerButton: WKInterfaceButton!
     
     @IBAction func startRestTimerButtonTapped() {
-        animate(withDuration: 0.4) {
-            [unowned self] in
-            self.startRestTimerButton.setTitle(nil)
-            self.restTimerGroup.setRelativeWidth(0.5, withAdjustment: 0)
-            self.restTimerGroup.setAlpha(1)
-            self.startRestTimerButtonGroup.setRelativeWidth(0.5, withAdjustment: 0)
-        }
+        animateRestTimerIn()
     }
     
+    @IBAction func stopRestTimerButtonTapped() {
+        animateRestTimerOut()
+        resetRestTimer()
+    }
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         removeTitle()
@@ -133,9 +129,9 @@ class HeartRateIFC: WKInterfaceController {
         let formattedTime = String(format: "%02i:%02i:%02i", hours, minutes, seconds)
         elapsedTimeLabel.setText(formattedTime)
     
-//        let (restHours, restMinutes, restSeconds) = elapsedRestTime.secondsToElapsedTimeFormat()
-//        let formatted = String(format: "%02i:%02i:%02i", restHours, restMinutes, restSeconds)
-//        restTimerLabel.setText(formatted)
+        let (restHours, restMinutes, restSeconds) = elapsedRestTime.secondsToElapsedTimeFormat()
+        let formatted = String(format: "%02i:%02i:%02i", restHours, restMinutes, restSeconds)
+        restTimerLabel.setText(formatted)
     }
     
     fileprivate func observeHearthRate() {
@@ -144,6 +140,48 @@ class HeartRateIFC: WKInterfaceController {
             guard let quantity = samples.last?.quantity else { return }
             self?.currentBpm = Int(quantity.doubleValue(for: HKUnit(from: "count/min")))
         }
+    }
+    
+    private func animateRestTimerIn() {
+        animate(withDuration: 0.4) {
+            [unowned self] in
+            self.startRestTimerButtonGroup.setAlpha(0)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                [unowned self] in
+                self.startRestTimerButtonGroup.setRelativeWidth(0, withAdjustment: 0)
+                self.restTimerGroup.setRelativeWidth(0.5, withAdjustment: 0)
+                self.stopRestTimerButtonGroup.setRelativeWidth(0.5, withAdjustment: 0)
+                self.animate(withDuration: 0.4) {
+                    [unowned self] in
+                    self.restTimerGroup.setAlpha(1)
+                    self.stopRestTimerButtonGroup.setAlpha(1)
+                    self.restTimerActive = true
+                }
+            }
+        }
+    }
+    
+    private func animateRestTimerOut() {
+        animate(withDuration: 0.4) {
+            [unowned self] in
+            self.stopRestTimerButtonGroup.setAlpha(0)
+            self.restTimerGroup.setAlpha(0)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                [unowned self] in
+                self.restTimerGroup.setRelativeWidth(0, withAdjustment: 0)
+                self.stopRestTimerButtonGroup.setRelativeWidth(0, withAdjustment: 0)
+                self.startRestTimerButtonGroup.setRelativeWidth(1, withAdjustment: 0)
+                self.animate(withDuration: 0.4) {
+                    [unowned self] in
+                    self.startRestTimerButtonGroup.setAlpha(1)
+                }
+            }
+        }
+    }
+    
+    private func resetRestTimer() {
+        restTimerActive = false
+        elapsedRestTime = 0
     }
     
     private var workoutSession: HKWorkoutSession?
