@@ -29,16 +29,18 @@ class IntervalTimerRunningIFC : WKInterfaceController {
     }
     
     private func showCountdown() {
-        var count = 0
-        let countTo = countdown.count
+        var count = 3
+        let countTo = 0
 
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {
             [unowned self] timer in
-            self.timeLeftLabel.setText(self.countdown[count])
+            count -= 1
+
+            self.timeLeftLabel.setText("\(count)")
             
-            count += 1
             if count == countTo {
                 timer.invalidate()
+                self.timeLeftLabel.setText("Go!")
                 self.startTimer()
             }
         }
@@ -97,7 +99,6 @@ class IntervalTimerRunningIFC : WKInterfaceController {
         WKInterfaceDevice.current().play(.failure)
     }
     
-    private var countdown: [String] = ["☝🏻", "✌🏻", "💪🏻"]
     private var currentTimerType: CurrentTimerType = .workout
     private weak var timer: Timer?
     private var intervalTimes: IntervalTimes?

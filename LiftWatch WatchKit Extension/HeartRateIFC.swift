@@ -64,9 +64,6 @@ class HeartRateIFC: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        
-        // TODO: This is not needed. Only for simulator dev purposes.
-        animateHeartWith(bpm: 60)
     }
 
     override func didDeactivate() {

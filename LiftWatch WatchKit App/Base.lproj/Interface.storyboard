@@ -73,7 +73,7 @@
                 <controller id="fyl-ht-SJW" customClass="IntervalTimerRunningIFC" customModule="LiftWatch_WatchKit_Extension">
                     <items>
                         <label width="1" widthAdjustment="1" height="1" alignment="left" text="3" textAlignment="center" id="8Qk-Pd-3iL">
-                            <fontDescription key="font" type="boldSystem" pointSize="65"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="95"/>
                         </label>
                     </items>
                     <connections>
