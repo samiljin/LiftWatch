@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13507"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -72,8 +72,8 @@
             <objects>
                 <controller id="fyl-ht-SJW" customClass="IntervalTimerRunningIFC" customModule="LiftWatch_WatchKit_Extension">
                     <items>
-                        <label width="1" widthAdjustment="1" height="1" alignment="left" text="✊🏻" textAlignment="center" id="8Qk-Pd-3iL">
-                            <fontDescription key="font" type="boldSystem" pointSize="65"/>
+                        <label width="1" widthAdjustment="1" height="1" alignment="left" text="3" textAlignment="center" id="8Qk-Pd-3iL">
+                            <fontDescription key="font" type="boldSystem" pointSize="95"/>
                         </label>
                     </items>
                     <connections>
@@ -88,7 +88,7 @@
             <objects>
                 <controller id="eMi-nD-4Rz" customClass="HeartRateIFC" customModule="LiftWatch_WatchKit_Extension">
                     <items>
-                        <group width="1" height="0.38" alignment="left" id="YvC-6V-bTU">
+                        <group width="1" height="0.34999999999999998" heightAdjustment="2" alignment="left" id="YvC-6V-bTU">
                             <items>
                                 <group width="0.29999999999999999" height="1" alignment="left" id="0so-EB-nZb">
                                     <items>
@@ -97,60 +97,56 @@
                                         </imageView>
                                     </items>
                                 </group>
-                                <label width="0.75" height="1" alignment="left" verticalAlignment="center" text="--" textAlignment="center" id="6t9-3d-lhn">
+                                <label width="0.75" height="1" alignment="left" verticalAlignment="center" text="52" textAlignment="center" id="6t9-3d-lhn">
                                     <color key="textColor" red="1" green="0.084040851149999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="font" type="boldSystem" pointSize="68"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="66"/>
                                     <variation key="device=watch38mm">
-                                        <fontDescription key="font" type="boldSystem" pointSize="58"/>
+                                        <fontDescription key="font" type="boldSystem" pointSize="56"/>
                                     </variation>
                                 </label>
                             </items>
                         </group>
-                        <group width="1" height="0.17999999999999999" alignment="left" id="3Ts-La-X3r">
+                        <group width="1" alignment="left" id="xD1-t2-8RZ">
                             <items>
-                                <label width="1" height="1" alignment="center" verticalAlignment="center" text="00:00:00" textAlignment="left" id="aIG-24-rB5">
-                                    <color key="textColor" red="0.98331991249999995" green="1" blue="0.28556338780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" type="boldSystem" pointSize="32"/>
-                                    <variation key="device=watch38mm">
-                                        <fontDescription key="font" type="boldSystem" pointSize="26"/>
-                                    </variation>
+                                <label width="0.5" alignment="left" text="Time" textAlignment="left" id="uAn-fT-Inh"/>
+                                <label width="0.5" widthAdjustment="-5" alignment="left" text="Kcal" textAlignment="left" id="jSv-xY-Rom"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="k4c-Z6-y1F">
+                            <items>
+                                <label width="0.5" alignment="left" text="00:00:00" textAlignment="left" id="QZK-y2-sh2">
+                                    <color key="textColor" red="0.98544698949999998" green="0.98728805779999995" blue="0.35207164289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <label width="0.5" alignment="left" text="0" textAlignment="left" id="2WK-C9-2VE">
+                                    <color key="textColor" red="0.36566697329999998" green="0.61001893299999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </label>
                             </items>
                         </group>
-                        <group width="1" height="0.17999999999999999" alignment="left" id="0Ew-Ck-mJf">
+                        <group width="1" alignment="left" id="vts-ox-4MO">
                             <items>
-                                <label alignment="left" text="rest time" id="Rif-uQ-pCu"/>
-                                <label width="1" height="1" alignment="center" verticalAlignment="center" text="00:00:00" textAlignment="left" id="Hv5-Cp-zAT">
-                                    <gestureRecognizers>
-                                        <tapGestureRecognizer id="INT-CC-qMi">
+                                <group width="0.0" alignment="left" verticalAlignment="center" alpha="0.0" id="Llk-HT-RSO">
+                                    <items>
+                                        <label alignment="left" text="00:00:00" id="fwp-hF-5uS"/>
+                                    </items>
+                                </group>
+                                <group width="0.0" alignment="left" alpha="0.0" id="1JC-5F-aRf">
+                                    <items>
+                                        <button width="1" alignment="left" title="Stop" id="9mO-um-kVU">
                                             <connections>
-                                                <action selector="restTimerTapped:" destination="eMi-nD-4Rz" id="CHc-gK-vPE"/>
+                                                <action selector="stopRestTimerButtonTapped" destination="eMi-nD-4Rz" id="IvA-tz-8wT"/>
                                             </connections>
-                                        </tapGestureRecognizer>
-                                    </gestureRecognizers>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                    <fontDescription key="font" type="boldSystem" pointSize="32"/>
-                                    <variation key="device=watch38mm">
-                                        <fontDescription key="font" type="boldSystem" pointSize="26"/>
-                                    </variation>
-                                </label>
-                            </items>
-                        </group>
-                        <group width="1" height="0.17999999999999999" heightAdjustment="0.20000000000000001" alignment="left" id="245-ZJ-nMH">
-                            <items>
-                                <label alignment="left" verticalAlignment="center" text="0" textAlignment="left" id="AMi-J2-bT4">
-                                    <fontDescription key="font" type="boldSystem" pointSize="32"/>
-                                    <variation key="device=watch38mm">
-                                        <fontDescription key="font" type="boldSystem" pointSize="26"/>
-                                    </variation>
-                                </label>
-                                <label alignment="left" verticalAlignment="center" text="kcal" textAlignment="left" id="RSF-Ub-f1N">
-                                    <color key="textColor" red="0.99345549740000005" green="0.99345549740000005" blue="0.99345549740000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" type="system" weight="medium" pointSize="33"/>
-                                    <variation key="device=watch38mm">
-                                        <fontDescription key="font" type="system" weight="medium" pointSize="26"/>
-                                    </variation>
-                                </label>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="Uid-Qs-RVN">
+                                    <items>
+                                        <button width="1" alignment="left" title="Start rest timer" id="yLs-nN-piE">
+                                            <connections>
+                                                <action selector="startRestTimerButtonTapped" destination="eMi-nD-4Rz" id="Zcg-6o-ehR"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
                             </items>
                         </group>
                     </items>
@@ -174,11 +170,16 @@
                         </items>
                     </menu>
                     <connections>
-                        <outlet property="caloriesBurnedLabel" destination="AMi-J2-bT4" id="ndV-Bw-nE0"/>
-                        <outlet property="elapsedTimeLabel" destination="aIG-24-rB5" id="3A9-e3-bZP"/>
+                        <outlet property="caloriesBurnedLabel" destination="2WK-C9-2VE" id="cBs-ce-0Y9"/>
+                        <outlet property="elapsedTimeLabel" destination="QZK-y2-sh2" id="H5E-8H-OHT"/>
                         <outlet property="heartIcon" destination="3DX-E3-nQu" id="d5N-tK-3d1"/>
                         <outlet property="hearthRateLabel" destination="6t9-3d-lhn" id="ivT-hP-z3c"/>
-                        <outlet property="restTimerLabel" destination="Hv5-Cp-zAT" id="Nzz-0o-Gkg"/>
+                        <outlet property="restTimerGroup" destination="Llk-HT-RSO" id="RSB-HY-lvD"/>
+                        <outlet property="restTimerLabel" destination="fwp-hF-5uS" id="qu8-Qv-sJo"/>
+                        <outlet property="startRestTimerButton" destination="yLs-nN-piE" id="F30-HQ-Kwq"/>
+                        <outlet property="startRestTimerButtonGroup" destination="Uid-Qs-RVN" id="R1Z-WF-egN"/>
+                        <outlet property="stopRestTimerButton" destination="9mO-um-kVU" id="lgk-qi-ZQ1"/>
+                        <outlet property="stopRestTimerButtonGroup" destination="1JC-5F-aRf" id="Vw4-x5-0jk"/>
                     </connections>
                 </controller>
             </objects>

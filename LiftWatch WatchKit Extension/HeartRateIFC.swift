@@ -11,21 +11,28 @@ import HealthKit
 import Foundation
 
 class HeartRateIFC: WKInterfaceController {
-
+    
     @IBOutlet var heartIcon: WKInterfaceImage!
     @IBOutlet var elapsedTimeLabel: WKInterfaceLabel!
     @IBOutlet var hearthRateLabel: WKInterfaceLabel!
-    @IBOutlet var restTimerLabel: WKInterfaceLabel!
     @IBOutlet var caloriesBurnedLabel: WKInterfaceLabel!
 
-    @IBAction func restTimerTapped(_ sender: Any) {
-        restTimerActive = !restTimerActive
-        
-        if !restTimerActive {
-            elapsedRestTime = 0
-        }
+    @IBOutlet var restTimerGroup: WKInterfaceGroup!
+    @IBOutlet var restTimerLabel: WKInterfaceLabel!
+    @IBOutlet var stopRestTimerButtonGroup: WKInterfaceGroup!
+    @IBOutlet var stopRestTimerButton: WKInterfaceButton!
+    @IBOutlet var startRestTimerButtonGroup: WKInterfaceGroup!
+    @IBOutlet var startRestTimerButton: WKInterfaceButton!
+    
+    @IBAction func startRestTimerButtonTapped() {
+        animateRestTimerIn()
     }
     
+    @IBAction func stopRestTimerButtonTapped() {
+        animateRestTimerOut()
+        resetRestTimer()
+    }
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         removeTitle()
@@ -57,9 +64,6 @@ class HeartRateIFC: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        
-        // TODO: This is not needed. Only for simulator dev purposes.
-        animateHeartWith(bpm: 60)
     }
 
     override func didDeactivate() {
@@ -133,6 +137,48 @@ class HeartRateIFC: WKInterfaceController {
             guard let quantity = samples.last?.quantity else { return }
             self?.currentBpm = Int(quantity.doubleValue(for: HKUnit(from: "count/min")))
         }
+    }
+    
+    private func animateRestTimerIn() {
+        animate(withDuration: 0.4) {
+            [unowned self] in
+            self.startRestTimerButtonGroup.setAlpha(0)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                [unowned self] in
+                self.startRestTimerButtonGroup.setRelativeWidth(0, withAdjustment: 0)
+                self.restTimerGroup.setRelativeWidth(0.5, withAdjustment: 0)
+                self.stopRestTimerButtonGroup.setRelativeWidth(0.5, withAdjustment: 0)
+                self.animate(withDuration: 0.4) {
+                    [unowned self] in
+                    self.restTimerGroup.setAlpha(1)
+                    self.stopRestTimerButtonGroup.setAlpha(1)
+                    self.restTimerActive = true
+                }
+            }
+        }
+    }
+    
+    private func animateRestTimerOut() {
+        animate(withDuration: 0.4) {
+            [unowned self] in
+            self.stopRestTimerButtonGroup.setAlpha(0)
+            self.restTimerGroup.setAlpha(0)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                [unowned self] in
+                self.restTimerGroup.setRelativeWidth(0, withAdjustment: 0)
+                self.stopRestTimerButtonGroup.setRelativeWidth(0, withAdjustment: 0)
+                self.startRestTimerButtonGroup.setRelativeWidth(1, withAdjustment: 0)
+                self.animate(withDuration: 0.4) {
+                    [unowned self] in
+                    self.startRestTimerButtonGroup.setAlpha(1)
+                }
+            }
+        }
+    }
+    
+    private func resetRestTimer() {
+        restTimerActive = false
+        elapsedRestTime = 0
     }
     
     private var workoutSession: HKWorkoutSession?
