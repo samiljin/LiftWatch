@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEF0EFD6209CE3AE00A9BF11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0EFD5209CE3AE00A9BF11 /* AppDelegate.swift */; };
+		EEF0EFD8209CE3AE00A9BF11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0EFD7209CE3AE00A9BF11 /* ViewController.swift */; };
+		EEF0EFDB209CE3AE00A9BF11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF0EFD9209CE3AE00A9BF11 /* Main.storyboard */; };
+		EEF0EFDD209CE3AF00A9BF11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF0EFDC209CE3AF00A9BF11 /* Assets.xcassets */; };
+		EEF0EFE0209CE3AF00A9BF11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF0EFDE209CE3AF00A9BF11 /* LaunchScreen.storyboard */; };
+		EEF0EFF0209CE3AF00A9BF11 /* LiftWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EEF0EFEF209CE3AF00A9BF11 /* LiftWatch WatchKit App.app */; };
+		EEF0EFF6209CE3AF00A9BF11 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF0EFF4209CE3AF00A9BF11 /* Interface.storyboard */; };
+		EEF0EFF8209CE3B000A9BF11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF0EFF7209CE3B000A9BF11 /* Assets.xcassets */; };
+		EEF0EFFF209CE3B000A9BF11 /* LiftWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EEF0EFFE209CE3B000A9BF11 /* LiftWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EEF0F004209CE3B000A9BF11 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0F003209CE3B000A9BF11 /* InterfaceController.swift */; };
+		EEF0F006209CE3B000A9BF11 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0F005209CE3B000A9BF11 /* ExtensionDelegate.swift */; };
+		EEF0F008209CE3B000A9BF11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF0F007209CE3B000A9BF11 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEF0EFE7209CE3AF00A9BF11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEF0EFCA209CE3AE00A9BF11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEF0EFD1209CE3AE00A9BF11;
+			remoteInfo = LiftWatch;
+		};
+		EEF0EFF1209CE3AF00A9BF11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEF0EFCA209CE3AE00A9BF11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEF0EFEE209CE3AF00A9BF11;
+			remoteInfo = "LiftWatch WatchKit App";
+		};
+		EEF0F000209CE3B000A9BF11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEF0EFCA209CE3AE00A9BF11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEF0EFFD209CE3B000A9BF11;
+			remoteInfo = "LiftWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EEF0F00F209CE3B000A9BF11 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EEF0EFFF209CE3B000A9BF11 /* LiftWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF0F013209CE3B000A9BF11 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EEF0EFF0209CE3AF00A9BF11 /* LiftWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EEF0EFD2209CE3AE00A9BF11 /* LiftWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiftWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF0EFD5209CE3AE00A9BF11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEF0EFD7209CE3AE00A9BF11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEF0EFDA209CE3AE00A9BF11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEF0EFDC209CE3AF00A9BF11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEF0EFDF209CE3AF00A9BF11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEF0EFE1209CE3AF00A9BF11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF0EFE6209CE3AF00A9BF11 /* LiftWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF0EFEF209CE3AF00A9BF11 /* LiftWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiftWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF0EFF5209CE3AF00A9BF11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EEF0EFF7209CE3B000A9BF11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEF0EFF9209CE3B000A9BF11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF0EFFE209CE3B000A9BF11 /* LiftWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LiftWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF0F003209CE3B000A9BF11 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EEF0F005209CE3B000A9BF11 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EEF0F007209CE3B000A9BF11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEF0F009209CE3B000A9BF11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEF0EFCF209CE3AE00A9BF11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF0EFE3209CE3AF00A9BF11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF0EFFB209CE3B000A9BF11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEF0EFC9209CE3AE00A9BF11 = {
+			isa = PBXGroup;
+			children = (
+				EEF0EFD4209CE3AE00A9BF11 /* LiftWatch */,
+				EEF0EFF3209CE3AF00A9BF11 /* LiftWatch WatchKit App */,
+				EEF0F002209CE3B000A9BF11 /* LiftWatch WatchKit Extension */,
+				EEF0EFD3209CE3AE00A9BF11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEF0EFD3209CE3AE00A9BF11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEF0EFD2209CE3AE00A9BF11 /* LiftWatch.app */,
+				EEF0EFE6209CE3AF00A9BF11 /* LiftWatchTests.xctest */,
+				EEF0EFEF209CE3AF00A9BF11 /* LiftWatch WatchKit App.app */,
+				EEF0EFFE209CE3B000A9BF11 /* LiftWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEF0EFD4209CE3AE00A9BF11 /* LiftWatch */ = {
+			isa = PBXGroup;
+			children = (
+				EEF0EFD5209CE3AE00A9BF11 /* AppDelegate.swift */,
+				EEF0EFD7209CE3AE00A9BF11 /* ViewController.swift */,
+				EEF0EFD9209CE3AE00A9BF11 /* Main.storyboard */,
+				EEF0EFDC209CE3AF00A9BF11 /* Assets.xcassets */,
+				EEF0EFDE209CE3AF00A9BF11 /* LaunchScreen.storyboard */,
+				EEF0EFE1209CE3AF00A9BF11 /* Info.plist */,
+			);
+			path = LiftWatch;
+			sourceTree = "<group>";
+		};
+		EEF0EFF3209CE3AF00A9BF11 /* LiftWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EEF0EFF4209CE3AF00A9BF11 /* Interface.storyboard */,
+				EEF0EFF7209CE3B000A9BF11 /* Assets.xcassets */,
+				EEF0EFF9209CE3B000A9BF11 /* Info.plist */,
+			);
+			path = "LiftWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		EEF0F002209CE3B000A9BF11 /* LiftWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EEF0F003209CE3B000A9BF11 /* InterfaceController.swift */,
+				EEF0F005209CE3B000A9BF11 /* ExtensionDelegate.swift */,
+				EEF0F007209CE3B000A9BF11 /* Assets.xcassets */,
+				EEF0F009209CE3B000A9BF11 /* Info.plist */,
+			);
+			path = "LiftWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEF0EFD1209CE3AE00A9BF11 /* LiftWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEF0F014209CE3B000A9BF11 /* Build configuration list for PBXNativeTarget "LiftWatch" */;
+			buildPhases = (
+				EEF0EFCE209CE3AE00A9BF11 /* Sources */,
+				EEF0EFCF209CE3AE00A9BF11 /* Frameworks */,
+				EEF0EFD0209CE3AE00A9BF11 /* Resources */,
+				EEF0F013209CE3B000A9BF11 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEF0EFF2209CE3AF00A9BF11 /* PBXTargetDependency */,
+			);
+			name = LiftWatch;
+			productName = LiftWatch;
+			productReference = EEF0EFD2209CE3AE00A9BF11 /* LiftWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEF0EFE5209CE3AF00A9BF11 /* LiftWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEF0F017209CE3B000A9BF11 /* Build configuration list for PBXNativeTarget "LiftWatchTests" */;
+			buildPhases = (
+				EEF0EFE2209CE3AF00A9BF11 /* Sources */,
+				EEF0EFE3209CE3AF00A9BF11 /* Frameworks */,
+				EEF0EFE4209CE3AF00A9BF11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEF0EFE8209CE3AF00A9BF11 /* PBXTargetDependency */,
+			);
+			name = LiftWatchTests;
+			productName = LiftWatchTests;
+			productReference = EEF0EFE6209CE3AF00A9BF11 /* LiftWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEF0EFEE209CE3AF00A9BF11 /* LiftWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEF0F010209CE3B000A9BF11 /* Build configuration list for PBXNativeTarget "LiftWatch WatchKit App" */;
+			buildPhases = (
+				EEF0EFED209CE3AF00A9BF11 /* Resources */,
+				EEF0F00F209CE3B000A9BF11 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEF0F001209CE3B000A9BF11 /* PBXTargetDependency */,
+			);
+			name = "LiftWatch WatchKit App";
+			productName = "LiftWatch WatchKit App";
+			productReference = EEF0EFEF209CE3AF00A9BF11 /* LiftWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EEF0EFFD209CE3B000A9BF11 /* LiftWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEF0F00C209CE3B000A9BF11 /* Build configuration list for PBXNativeTarget "LiftWatch WatchKit Extension" */;
+			buildPhases = (
+				EEF0EFFA209CE3B000A9BF11 /* Sources */,
+				EEF0EFFB209CE3B000A9BF11 /* Frameworks */,
+				EEF0EFFC209CE3B000A9BF11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LiftWatch WatchKit Extension";
+			productName = "LiftWatch WatchKit Extension";
+			productReference = EEF0EFFE209CE3B000A9BF11 /* LiftWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEF0EFCA209CE3AE00A9BF11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Sami Iljin";
+				TargetAttributes = {
+					EEF0EFD1209CE3AE00A9BF11 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					EEF0EFE5209CE3AF00A9BF11 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = EEF0EFD1209CE3AE00A9BF11;
+					};
+					EEF0EFEE209CE3AF00A9BF11 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					EEF0EFFD209CE3B000A9BF11 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = EEF0EFCD209CE3AE00A9BF11 /* Build configuration list for PBXProject "LiftWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEF0EFC9209CE3AE00A9BF11;
+			productRefGroup = EEF0EFD3209CE3AE00A9BF11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEF0EFD1209CE3AE00A9BF11 /* LiftWatch */,
+				EEF0EFE5209CE3AF00A9BF11 /* LiftWatchTests */,
+				EEF0EFEE209CE3AF00A9BF11 /* LiftWatch WatchKit App */,
+				EEF0EFFD209CE3B000A9BF11 /* LiftWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEF0EFD0209CE3AE00A9BF11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF0EFE0209CE3AF00A9BF11 /* LaunchScreen.storyboard in Resources */,
+				EEF0EFDD209CE3AF00A9BF11 /* Assets.xcassets in Resources */,
+				EEF0EFDB209CE3AE00A9BF11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF0EFE4209CE3AF00A9BF11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF0EFED209CE3AF00A9BF11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF0EFF8209CE3B000A9BF11 /* Assets.xcassets in Resources */,
+				EEF0EFF6209CE3AF00A9BF11 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF0EFFC209CE3B000A9BF11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF0F008209CE3B000A9BF11 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEF0EFCE209CE3AE00A9BF11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF0EFD8209CE3AE00A9BF11 /* ViewController.swift in Sources */,
+				EEF0EFD6209CE3AE00A9BF11 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF0EFE2209CE3AF00A9BF11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF0EFFA209CE3B000A9BF11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF0F006209CE3B000A9BF11 /* ExtensionDelegate.swift in Sources */,
+				EEF0F004209CE3B000A9BF11 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEF0EFE8209CE3AF00A9BF11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEF0EFD1209CE3AE00A9BF11 /* LiftWatch */;
+			targetProxy = EEF0EFE7209CE3AF00A9BF11 /* PBXContainerItemProxy */;
+		};
+		EEF0EFF2209CE3AF00A9BF11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEF0EFEE209CE3AF00A9BF11 /* LiftWatch WatchKit App */;
+			targetProxy = EEF0EFF1209CE3AF00A9BF11 /* PBXContainerItemProxy */;
+		};
+		EEF0F001209CE3B000A9BF11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEF0EFFD209CE3B000A9BF11 /* LiftWatch WatchKit Extension */;
+			targetProxy = EEF0F000209CE3B000A9BF11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EEF0EFD9209CE3AE00A9BF11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEF0EFDA209CE3AE00A9BF11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EEF0EFDE209CE3AF00A9BF11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEF0EFDF209CE3AF00A9BF11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EEF0EFF4209CE3AF00A9BF11 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEF0EFF5209CE3AF00A9BF11 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEF0F00A209CE3B000A9BF11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEF0F00B209CE3B000A9BF11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEF0F00D209CE3B000A9BF11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DT4FYLLL62;
+				INFOPLIST_FILE = "LiftWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sami.iljin.LiftWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		EEF0F00E209CE3B000A9BF11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DT4FYLLL62;
+				INFOPLIST_FILE = "LiftWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sami.iljin.LiftWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		EEF0F011209CE3B000A9BF11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DT4FYLLL62;
+				IBSC_MODULE = LiftWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "LiftWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = sami.iljin.LiftWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		EEF0F012209CE3B000A9BF11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DT4FYLLL62;
+				IBSC_MODULE = LiftWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "LiftWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = sami.iljin.LiftWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		EEF0F015209CE3B000A9BF11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DT4FYLLL62;
+				INFOPLIST_FILE = LiftWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sami.iljin.LiftWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEF0F016209CE3B000A9BF11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DT4FYLLL62;
+				INFOPLIST_FILE = LiftWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sami.iljin.LiftWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EEF0F018209CE3B000A9BF11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DT4FYLLL62;
+				INFOPLIST_FILE = LiftWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sami.iljin.LiftWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiftWatch.app/LiftWatch";
+			};
+			name = Debug;
+		};
+		EEF0F019209CE3B000A9BF11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DT4FYLLL62;
+				INFOPLIST_FILE = LiftWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sami.iljin.LiftWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiftWatch.app/LiftWatch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEF0EFCD209CE3AE00A9BF11 /* Build configuration list for PBXProject "LiftWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF0F00A209CE3B000A9BF11 /* Debug */,
+				EEF0F00B209CE3B000A9BF11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEF0F00C209CE3B000A9BF11 /* Build configuration list for PBXNativeTarget "LiftWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF0F00D209CE3B000A9BF11 /* Debug */,
+				EEF0F00E209CE3B000A9BF11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEF0F010209CE3B000A9BF11 /* Build configuration list for PBXNativeTarget "LiftWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF0F011209CE3B000A9BF11 /* Debug */,
+				EEF0F012209CE3B000A9BF11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEF0F014209CE3B000A9BF11 /* Build configuration list for PBXNativeTarget "LiftWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF0F015209CE3B000A9BF11 /* Debug */,
+				EEF0F016209CE3B000A9BF11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEF0F017209CE3B000A9BF11 /* Build configuration list for PBXNativeTarget "LiftWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF0F018209CE3B000A9BF11 /* Debug */,
+				EEF0F019209CE3B000A9BF11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEF0EFCA209CE3AE00A9BF11 /* Project object */;
+}
