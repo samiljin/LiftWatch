@@ -1,0 +1,1192 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0564CBBF8DBAF43A4EDF1BAA632B6186 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35E795A4705B4FB474FF417682335F1 /* ConstraintMakerExtendable.swift */; };
+		0ADF685729FB94F1BE87DFCAB33A6F6C /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45908992EEDBCFF12244DAE9912F7228 /* UILayoutSupport+Extensions.swift */; };
+		0F9C1B85F4CA8D28D636B5424EA0FD12 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF518E3C1EEA98354E7A1BB1CEC881B /* ConstraintAttributes.swift */; };
+		181D6BE2374C638C0D8772E4ED56DDFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		2FBA2DB763F221CADE388430FC157AD9 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE14A5BE5AA8350526F042EBC920BAA /* ConstraintLayoutSupport.swift */; };
+		38EE60BA48A9F04E75C2141C69E05407 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9297EFDA2A228BE0D126B13FEC2B2AC1 /* ConstraintInsets.swift */; };
+		3951A5BDF2E531CABF916C185F2EEAD9 /* Pods-LiftWatch WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C61A152B1AA8064AAFCF5C31777E1854 /* Pods-LiftWatch WatchKit Extension-dummy.m */; };
+		3A64B79BAF6E3FD134C0F2508CAEF593 /* Pods-LiftWatch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9B5EAB2AB9454A0228BDB16362C1C9 /* Pods-LiftWatch-dummy.m */; };
+		3B7CF5DC8471DEA2C00CA898AAB12033 /* Pods-LiftWatchTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 280B28720017A88A5052ADB6C6337408 /* Pods-LiftWatchTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C6E8AEA51BC13951F83CC856826E9F7 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F75E7EE36678F81FD1EC4247DB1B87 /* ConstraintMakerFinalizable.swift */; };
+		410710CFC5B01851A8D4C8A2E153CAE0 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EC67A9344FB011AC6B0CB0B1706C1C /* ConstraintLayoutSupportDSL.swift */; };
+		4685D0A9724D81E92FB4C564C6D9B1F1 /* Pods-LiftWatchTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD6B9A97D3FC468F08635CF658347A /* Pods-LiftWatchTests-dummy.m */; };
+		47D14E38B17B631E138DEB32DC1A1961 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5FAAF2F13CE5B667DCA58EF782CF6D /* ConstraintLayoutGuide.swift */; };
+		4AE6D9B080773E2785301A16C71EE271 /* Pods-LiftWatch WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A5AEEA89788A5620EC563538A9BA41 /* Pods-LiftWatch WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BF7CEE6A0243B0C73FE7C717BB1C8D9 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F1F08ED6F3C072E7AC9154FBDC8C4E /* SnapKit-dummy.m */; };
+		4CF29B1BB43167D419F3801F24A3E791 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618BA51B32ACF0F8F31A11BACEF95396 /* ConstraintMultiplierTarget.swift */; };
+		4D77BCCC6CCF23040A4801BE6B2B31C5 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69B953D578152B8ABC94EDF5E0C6A43 /* LayoutConstraintItem.swift */; };
+		50027028CFADD614222EB9EEA620E9C3 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3A931CDC4FB0563592274ED61655C7 /* ConstraintPriority.swift */; };
+		507540D860F144909EDE827239B34DA7 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155B0F68F55650AB9DA3EB802B75CFE0 /* ConstraintConstantTarget.swift */; };
+		5FDECD3CE7FBA5D02C7EB34CC2778BA6 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3463E11A1205B5C35B599F4A19C31C3 /* ConstraintOffsetTarget.swift */; };
+		6662DF1EA56F0A3D9500ED3D7DF48A05 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B73C67F9EFC99A11440EE4069211B84A /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		667635E73398661D39185BBE499B4C73 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5495F3260249C5CD5E62E6D02610A41D /* ConstraintPriorityTarget.swift */; };
+		710F382E3B40FEF3E4E6D2A0132DF855 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4EE941C99C2F663494C43944D63FD /* ConstraintConfig.swift */; };
+		719BC2E9CF6A7755E753BCBF0BFA515F /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97CEFB74800C4A5F04ED11A13D33D5 /* ConstraintItem.swift */; };
+		76EF753963CB882112EA5261E4824168 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDCD0CDEC036E08EBEFEBDB5217C5A /* ConstraintView+Extensions.swift */; };
+		7853CB333426CF03667B42994F108907 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC0AC855EFDB998E84AB91F91FC4CA /* ConstraintInsetTarget.swift */; };
+		78A40984A32254B1FFABCCE53F4AFA4F /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CE3DCD5A18E652A9D4C4FCC6AEAE10 /* ConstraintMakerEditable.swift */; };
+		7C137DC7038259D39275B94F51BFA04F /* Pods-LiftWatch WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 344524EF064A1A0F0DF63F4D781B19E6 /* Pods-LiftWatch WatchKit App-dummy.m */; };
+		7EC63C49B438743A1D92DB46AE4C4DE9 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A91D0ACFB6CF1883A820AA2607BCA8 /* ConstraintView.swift */; };
+		87E85F9389ED3B5036DC945C667632A3 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17F2D7F42352672F30A144E51AC809 /* ConstraintRelation.swift */; };
+		8F4FFB2260D6415EA753145C3E7E78B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76720B026417625FB62285B73CECF0BF /* Foundation.framework */; };
+		98E157FA655D3F61F188BFFF131F283D /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645061FD8BF394AC613CF4F0D51EEE0B /* ConstraintDSL.swift */; };
+		99598427DA42DE3CF8D4724D29F643E3 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2798FAD1ED522B9041959ED19ED6B3DE /* Constraint.swift */; };
+		9BF7CCE3975D229B2AC21DBAF22DC5C2 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1C88D7583A855F149230ABA2DF3C8 /* ConstraintRelatableTarget.swift */; };
+		9E556A42635601D2B2F8B62A87942E15 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B058F739089B32F3323418933731ADFB /* ConstraintViewDSL.swift */; };
+		A64DFC40F3B12E7827E661063BCB7F21 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09C8BFD80A7988D3B139768116EE2A7 /* ConstraintMakerRelatable.swift */; };
+		AE1BDC7FEB6FB38D02E0CC5E0D9FD73F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76720B026417625FB62285B73CECF0BF /* Foundation.framework */; };
+		B0DD61B7B71D89630180A907DE856CEC /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068A4C41AD3E035EFFE7E7F568CE1EF9 /* ConstraintLayoutGuideDSL.swift */; };
+		B724F4B2456CA3967FBCF8418C6520EF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABC9D64458AB89596AC989C36546AE0 /* Typealiases.swift */; };
+		BB00D367494F38A3B092E882EDE5480C /* Pods-LiftWatch WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C26595B9E3CAC064E70C1E7DD8F8C8D3 /* Pods-LiftWatch WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBDA4CA95F320E6AC6415415EBB3BCEF /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465909C1E34108C63AB5FBA6378D3493 /* LayoutConstraint.swift */; };
+		BD9D78E8C5B13F5FE3F39C305E18AB2B /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0A4D5D85B4FAEB4C7AF868A3E48121 /* ConstraintMakerPriortizable.swift */; };
+		CC240CC4918F06AAA15DC4F1D02283B5 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E03888824F0BC09BC4827577C35087 /* Debugging.swift */; };
+		CCD20B6BBC7BBA057E1F712B97DB73D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		CDB75ECE71D6171AB6360A4591D14C42 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A39EF6D4C8D8F847461613349A75E07 /* ConstraintDescription.swift */; };
+		D9EE2161BB504CD33385D90C3B355A3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		E05A3F0651B590221DD4FEC89AA3FAC7 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1FE61DC3251BBA5CD452BE8564C8E7 /* ConstraintMaker.swift */; };
+		F4E9B47BD60C857278B488034006E594 /* Pods-LiftWatch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE3E724FE1423B0E81DCCA14DA996E60 /* Pods-LiftWatch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB25DD32383C708E6864A6E09DD3B3BA /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130FD3420568BD4A44BC6359400E0A8 /* ConstraintLayoutGuide+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B72F961F7464E1836D63FC77DCBD408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAD41E390E89214E2870FF3DB26BC333;
+			remoteInfo = "Pods-LiftWatch";
+		};
+		B446E83E993A96BD7209D30132237B0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DF61594E70867A13D4000AC2AC30748;
+			remoteInfo = SnapKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0335B8E97D5EE68EAB298A0869ED1EEA /* Pods-LiftWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiftWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		068A4C41AD3E035EFFE7E7F568CE1EF9 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		0AF518E3C1EEA98354E7A1BB1CEC881B /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		11084A6BA20780B0A92EE054D45AD2B7 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		1130FD3420568BD4A44BC6359400E0A8 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		155B0F68F55650AB9DA3EB802B75CFE0 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		1C3A931CDC4FB0563592274ED61655C7 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		2057A81225328642D0E49115C61C8897 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		2104895763A1EC57512D700F8FE071E4 /* Pods-LiftWatch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiftWatch-acknowledgements.plist"; sourceTree = "<group>"; };
+		23C4EE941C99C2F663494C43944D63FD /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		2661A9C3278D89E54493BA17C28AD62D /* Pods-LiftWatch WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiftWatch WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
+		2798FAD1ED522B9041959ED19ED6B3DE /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		280B28720017A88A5052ADB6C6337408 /* Pods-LiftWatchTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiftWatchTests-umbrella.h"; sourceTree = "<group>"; };
+		2E3CBA0F90AEBC6049A863AAD7A19458 /* Pods-LiftWatch WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiftWatch WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		344524EF064A1A0F0DF63F4D781B19E6 /* Pods-LiftWatch WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiftWatch WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		35A91D0ACFB6CF1883A820AA2607BCA8 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		3733416791009624300E9F5E4F7E8476 /* Pods-LiftWatch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiftWatch.modulemap"; sourceTree = "<group>"; };
+		38D8C55283AA1120832F33B2E3D54802 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A39EF6D4C8D8F847461613349A75E07 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		3ABC9D64458AB89596AC989C36546AE0 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		3C5431B70F7FE854745DE31CA769B4E3 /* Pods-LiftWatch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiftWatch-acknowledgements.markdown"; sourceTree = "<group>"; };
+		42FD803358855F762696E4D9A786D665 /* Pods-LiftWatch WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiftWatch WatchKit App.modulemap"; sourceTree = "<group>"; };
+		45908992EEDBCFF12244DAE9912F7228 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		465909C1E34108C63AB5FBA6378D3493 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		48CE3DCD5A18E652A9D4C4FCC6AEAE10 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		5495F3260249C5CD5E62E6D02610A41D /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		55F1F08ED6F3C072E7AC9154FBDC8C4E /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		5BE41CB0B5C28E33E32476B19DE23177 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9B5EAB2AB9454A0228BDB16362C1C9 /* Pods-LiftWatch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiftWatch-dummy.m"; sourceTree = "<group>"; };
+		5FAC0AC855EFDB998E84AB91F91FC4CA /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		618BA51B32ACF0F8F31A11BACEF95396 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		645061FD8BF394AC613CF4F0D51EEE0B /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		6DFE0D34280BDBC9F14CF3CC8DC5149A /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FFA61444F56B2E1118F5131FDD31109 /* Pods-LiftWatch WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiftWatch WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		76720B026417625FB62285B73CECF0BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		872647605A1DFD3D0DC4544AD5625503 /* Pods-LiftWatch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiftWatch-resources.sh"; sourceTree = "<group>"; };
+		8A0A4D5D85B4FAEB4C7AF868A3E48121 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		9297EFDA2A228BE0D126B13FEC2B2AC1 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		92EC67A9344FB011AC6B0CB0B1706C1C /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B444D6B31834E16DA5E622AF6769A46 /* Pods-LiftWatch WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiftWatch WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		9DFD6B9A97D3FC468F08635CF658347A /* Pods-LiftWatchTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiftWatchTests-dummy.m"; sourceTree = "<group>"; };
+		9E0878ADF2E99AD5FC4FAFF18F67F08D /* Pods-LiftWatch WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiftWatch WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		AA8F3F6137F5B3F64A47A5585851E84A /* Pods-LiftWatch WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiftWatch WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ACCC3D3CED26606C3ABA8A9D55902466 /* Pods-LiftWatchTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiftWatchTests.modulemap"; sourceTree = "<group>"; };
+		AD4F050AE5A9A5BE836F34634C7A2230 /* Pods_LiftWatch_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiftWatch_WatchKit_Extension.framework; path = "Pods-LiftWatch WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCC13DF5A73FDC84E03C7CA82D43003 /* Pods-LiftWatchTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiftWatchTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF5FAAF2F13CE5B667DCA58EF782CF6D /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		B058F739089B32F3323418933731ADFB /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		B05C69F897E06FB597EC7B6AB59187A5 /* Pods_LiftWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiftWatch.framework; path = "Pods-LiftWatch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A9D214453517CE960B590245CAC0E6 /* Pods-LiftWatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiftWatchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B315CB13F5DBECE11959B6DF24B4E0F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5C9CEB30AA71EB58B5CD53321954DE0 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		B73C67F9EFC99A11440EE4069211B84A /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		B8BDCD0CDEC036E08EBEFEBDB5217C5A /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		B9CF53F6A4D66024867D68A83E72A596 /* Pods_LiftWatch_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiftWatch_WatchKit_App.framework; path = "Pods-LiftWatch WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD741F504668624614D44EA7D0A6EE1 /* Pods-LiftWatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiftWatchTests.release.xcconfig"; sourceTree = "<group>"; };
+		C0A5AEEA89788A5620EC563538A9BA41 /* Pods-LiftWatch WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiftWatch WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		C26595B9E3CAC064E70C1E7DD8F8C8D3 /* Pods-LiftWatch WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiftWatch WatchKit App-umbrella.h"; sourceTree = "<group>"; };
+		C42AA70B60F6176280C418EE8C639E7E /* Pods-LiftWatch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiftWatch-frameworks.sh"; sourceTree = "<group>"; };
+		C61A152B1AA8064AAFCF5C31777E1854 /* Pods-LiftWatch WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiftWatch WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		C7CBF56804C8A9626AAE812F7AA21CBD /* Pods-LiftWatchTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiftWatchTests-frameworks.sh"; sourceTree = "<group>"; };
+		CD78543F03864B88F33916FBFFCC0ADC /* Pods_LiftWatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LiftWatchTests.framework; path = "Pods-LiftWatchTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09C8BFD80A7988D3B139768116EE2A7 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3463E11A1205B5C35B599F4A19C31C3 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		D35E795A4705B4FB474FF417682335F1 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		D3B74960729247D9DA02114E891C4701 /* Pods-LiftWatch WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiftWatch WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		D69B953D578152B8ABC94EDF5E0C6A43 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		D6E03888824F0BC09BC4827577C35087 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		D700D5C5B67BF6231C06BCB6AAC18133 /* Pods-LiftWatch WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiftWatch WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		DA17F2D7F42352672F30A144E51AC809 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		DBCD887A59B6DAEE4EDE39C15E1BBBCE /* Pods-LiftWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiftWatch.release.xcconfig"; sourceTree = "<group>"; };
+		DBE14A5BE5AA8350526F042EBC920BAA /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		DC445FE37F01251752734E3FCEF38E78 /* Pods-LiftWatchTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiftWatchTests-resources.sh"; sourceTree = "<group>"; };
+		DD97CEFB74800C4A5F04ED11A13D33D5 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		DDDB11220B2829AD88AE808FB7DCE56A /* Pods-LiftWatchTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiftWatchTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E22EBA9F7974DC4E8200CD996D2FC84E /* Pods-LiftWatch WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiftWatch WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		E26D6BDF4EA277197C1792BA872391F1 /* Pods-LiftWatch WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiftWatch WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		E41924DFA8960E1A40B496E456DC20F6 /* Pods-LiftWatch WatchKit App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiftWatch WatchKit App-resources.sh"; sourceTree = "<group>"; };
+		E6155D2395BB66171737825E5487F2D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE3E724FE1423B0E81DCCA14DA996E60 /* Pods-LiftWatch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiftWatch-umbrella.h"; sourceTree = "<group>"; };
+		EEB1C88D7583A855F149230ABA2DF3C8 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		EEC1C0925B7A75C47F90DA4CD473E0A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F75E7EE36678F81FD1EC4247DB1B87 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		F58CCF0ED993B5092568F2505200BF43 /* Pods-LiftWatch WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiftWatch WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		F8B6DC615F61128B5FC3674D054301A4 /* Pods-LiftWatch WatchKit Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiftWatch WatchKit Extension-resources.sh"; sourceTree = "<group>"; };
+		FE1FE61DC3251BBA5CD452BE8564C8E7 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61908A34DCEDE45DFB965B055DECBDD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181D6BE2374C638C0D8772E4ED56DDFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74B9BDDA8F474CF1B37BB27469FFAF16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1BDC7FEB6FB38D02E0CC5E0D9FD73F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9120DCBCF7694EC7D3712FB6C373494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD20B6BBC7BBA057E1F712B97DB73D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA702DBB0F6D6368847DD5725F441BF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F4FFB2260D6415EA753145C3E7E78B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39317C8C8F004B52A0508A7352A009E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EE2161BB504CD33385D90C3B355A3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F14D01B37C684095099AE8C8376D636 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACE3CBBE2C7163F9C96209ED44FA75D0 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		35020E77BBAB111450B9F72E4CB0D9A6 /* Pods-LiftWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				38D8C55283AA1120832F33B2E3D54802 /* Info.plist */,
+				F58CCF0ED993B5092568F2505200BF43 /* Pods-LiftWatch WatchKit Extension.modulemap */,
+				2E3CBA0F90AEBC6049A863AAD7A19458 /* Pods-LiftWatch WatchKit Extension-acknowledgements.markdown */,
+				E26D6BDF4EA277197C1792BA872391F1 /* Pods-LiftWatch WatchKit Extension-acknowledgements.plist */,
+				C61A152B1AA8064AAFCF5C31777E1854 /* Pods-LiftWatch WatchKit Extension-dummy.m */,
+				D700D5C5B67BF6231C06BCB6AAC18133 /* Pods-LiftWatch WatchKit Extension-frameworks.sh */,
+				F8B6DC615F61128B5FC3674D054301A4 /* Pods-LiftWatch WatchKit Extension-resources.sh */,
+				C0A5AEEA89788A5620EC563538A9BA41 /* Pods-LiftWatch WatchKit Extension-umbrella.h */,
+				9E0878ADF2E99AD5FC4FAFF18F67F08D /* Pods-LiftWatch WatchKit Extension.debug.xcconfig */,
+				9B444D6B31834E16DA5E622AF6769A46 /* Pods-LiftWatch WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-LiftWatch WatchKit Extension";
+			path = "Target Support Files/Pods-LiftWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		432313F4618A6E0D54282078B6A48A1B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEC1C0925B7A75C47F90DA4CD473E0A9 /* Info.plist */,
+				2057A81225328642D0E49115C61C8897 /* SnapKit.modulemap */,
+				11084A6BA20780B0A92EE054D45AD2B7 /* SnapKit.xcconfig */,
+				55F1F08ED6F3C072E7AC9154FBDC8C4E /* SnapKit-dummy.m */,
+				B5C9CEB30AA71EB58B5CD53321954DE0 /* SnapKit-prefix.pch */,
+				B73C67F9EFC99A11440EE4069211B84A /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		482EA88B9136A5A573514953C7FCB52D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5736786FC47D95A118AAC7EDCD12FDCA /* Pods-LiftWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				B315CB13F5DBECE11959B6DF24B4E0F7 /* Info.plist */,
+				ACCC3D3CED26606C3ABA8A9D55902466 /* Pods-LiftWatchTests.modulemap */,
+				DDDB11220B2829AD88AE808FB7DCE56A /* Pods-LiftWatchTests-acknowledgements.markdown */,
+				ADCC13DF5A73FDC84E03C7CA82D43003 /* Pods-LiftWatchTests-acknowledgements.plist */,
+				9DFD6B9A97D3FC468F08635CF658347A /* Pods-LiftWatchTests-dummy.m */,
+				C7CBF56804C8A9626AAE812F7AA21CBD /* Pods-LiftWatchTests-frameworks.sh */,
+				DC445FE37F01251752734E3FCEF38E78 /* Pods-LiftWatchTests-resources.sh */,
+				280B28720017A88A5052ADB6C6337408 /* Pods-LiftWatchTests-umbrella.h */,
+				B1A9D214453517CE960B590245CAC0E6 /* Pods-LiftWatchTests.debug.xcconfig */,
+				BAD741F504668624614D44EA7D0A6EE1 /* Pods-LiftWatchTests.release.xcconfig */,
+			);
+			name = "Pods-LiftWatchTests";
+			path = "Target Support Files/Pods-LiftWatchTests";
+			sourceTree = "<group>";
+		};
+		5D6A81ACC619C53610DDADB0CD17E9E7 /* Pods-LiftWatch */ = {
+			isa = PBXGroup;
+			children = (
+				E6155D2395BB66171737825E5487F2D1 /* Info.plist */,
+				3733416791009624300E9F5E4F7E8476 /* Pods-LiftWatch.modulemap */,
+				3C5431B70F7FE854745DE31CA769B4E3 /* Pods-LiftWatch-acknowledgements.markdown */,
+				2104895763A1EC57512D700F8FE071E4 /* Pods-LiftWatch-acknowledgements.plist */,
+				5F9B5EAB2AB9454A0228BDB16362C1C9 /* Pods-LiftWatch-dummy.m */,
+				C42AA70B60F6176280C418EE8C639E7E /* Pods-LiftWatch-frameworks.sh */,
+				872647605A1DFD3D0DC4544AD5625503 /* Pods-LiftWatch-resources.sh */,
+				EE3E724FE1423B0E81DCCA14DA996E60 /* Pods-LiftWatch-umbrella.h */,
+				0335B8E97D5EE68EAB298A0869ED1EEA /* Pods-LiftWatch.debug.xcconfig */,
+				DBCD887A59B6DAEE4EDE39C15E1BBBCE /* Pods-LiftWatch.release.xcconfig */,
+			);
+			name = "Pods-LiftWatch";
+			path = "Target Support Files/Pods-LiftWatch";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8F91EE078EA3977443D1BDC2601132EF /* Frameworks */,
+				0F14D01B37C684095099AE8C8376D636 /* Pods */,
+				DCC2FE27375F936C150EDEFF3F4716AF /* Products */,
+				9837CD814B9F50CCF36131CA0C384DEC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8F91EE078EA3977443D1BDC2601132EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				482EA88B9136A5A573514953C7FCB52D /* iOS */,
+				FD9E2CBABDA1AB35BAD3C3F041262069 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9837CD814B9F50CCF36131CA0C384DEC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D6A81ACC619C53610DDADB0CD17E9E7 /* Pods-LiftWatch */,
+				F68E7006BDB6CBA0A545FB8821679556 /* Pods-LiftWatch WatchKit App */,
+				35020E77BBAB111450B9F72E4CB0D9A6 /* Pods-LiftWatch WatchKit Extension */,
+				5736786FC47D95A118AAC7EDCD12FDCA /* Pods-LiftWatchTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ACE3CBBE2C7163F9C96209ED44FA75D0 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				2798FAD1ED522B9041959ED19ED6B3DE /* Constraint.swift */,
+				0AF518E3C1EEA98354E7A1BB1CEC881B /* ConstraintAttributes.swift */,
+				23C4EE941C99C2F663494C43944D63FD /* ConstraintConfig.swift */,
+				155B0F68F55650AB9DA3EB802B75CFE0 /* ConstraintConstantTarget.swift */,
+				3A39EF6D4C8D8F847461613349A75E07 /* ConstraintDescription.swift */,
+				645061FD8BF394AC613CF4F0D51EEE0B /* ConstraintDSL.swift */,
+				9297EFDA2A228BE0D126B13FEC2B2AC1 /* ConstraintInsets.swift */,
+				5FAC0AC855EFDB998E84AB91F91FC4CA /* ConstraintInsetTarget.swift */,
+				DD97CEFB74800C4A5F04ED11A13D33D5 /* ConstraintItem.swift */,
+				AF5FAAF2F13CE5B667DCA58EF782CF6D /* ConstraintLayoutGuide.swift */,
+				1130FD3420568BD4A44BC6359400E0A8 /* ConstraintLayoutGuide+Extensions.swift */,
+				068A4C41AD3E035EFFE7E7F568CE1EF9 /* ConstraintLayoutGuideDSL.swift */,
+				DBE14A5BE5AA8350526F042EBC920BAA /* ConstraintLayoutSupport.swift */,
+				92EC67A9344FB011AC6B0CB0B1706C1C /* ConstraintLayoutSupportDSL.swift */,
+				FE1FE61DC3251BBA5CD452BE8564C8E7 /* ConstraintMaker.swift */,
+				48CE3DCD5A18E652A9D4C4FCC6AEAE10 /* ConstraintMakerEditable.swift */,
+				D35E795A4705B4FB474FF417682335F1 /* ConstraintMakerExtendable.swift */,
+				F3F75E7EE36678F81FD1EC4247DB1B87 /* ConstraintMakerFinalizable.swift */,
+				8A0A4D5D85B4FAEB4C7AF868A3E48121 /* ConstraintMakerPriortizable.swift */,
+				D09C8BFD80A7988D3B139768116EE2A7 /* ConstraintMakerRelatable.swift */,
+				618BA51B32ACF0F8F31A11BACEF95396 /* ConstraintMultiplierTarget.swift */,
+				D3463E11A1205B5C35B599F4A19C31C3 /* ConstraintOffsetTarget.swift */,
+				1C3A931CDC4FB0563592274ED61655C7 /* ConstraintPriority.swift */,
+				5495F3260249C5CD5E62E6D02610A41D /* ConstraintPriorityTarget.swift */,
+				EEB1C88D7583A855F149230ABA2DF3C8 /* ConstraintRelatableTarget.swift */,
+				DA17F2D7F42352672F30A144E51AC809 /* ConstraintRelation.swift */,
+				35A91D0ACFB6CF1883A820AA2607BCA8 /* ConstraintView.swift */,
+				B8BDCD0CDEC036E08EBEFEBDB5217C5A /* ConstraintView+Extensions.swift */,
+				B058F739089B32F3323418933731ADFB /* ConstraintViewDSL.swift */,
+				D6E03888824F0BC09BC4827577C35087 /* Debugging.swift */,
+				465909C1E34108C63AB5FBA6378D3493 /* LayoutConstraint.swift */,
+				D69B953D578152B8ABC94EDF5E0C6A43 /* LayoutConstraintItem.swift */,
+				3ABC9D64458AB89596AC989C36546AE0 /* Typealiases.swift */,
+				45908992EEDBCFF12244DAE9912F7228 /* UILayoutSupport+Extensions.swift */,
+				432313F4618A6E0D54282078B6A48A1B /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		DCC2FE27375F936C150EDEFF3F4716AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B05C69F897E06FB597EC7B6AB59187A5 /* Pods_LiftWatch.framework */,
+				B9CF53F6A4D66024867D68A83E72A596 /* Pods_LiftWatch_WatchKit_App.framework */,
+				AD4F050AE5A9A5BE836F34634C7A2230 /* Pods_LiftWatch_WatchKit_Extension.framework */,
+				CD78543F03864B88F33916FBFFCC0ADC /* Pods_LiftWatchTests.framework */,
+				6DFE0D34280BDBC9F14CF3CC8DC5149A /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F68E7006BDB6CBA0A545FB8821679556 /* Pods-LiftWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5BE41CB0B5C28E33E32476B19DE23177 /* Info.plist */,
+				42FD803358855F762696E4D9A786D665 /* Pods-LiftWatch WatchKit App.modulemap */,
+				AA8F3F6137F5B3F64A47A5585851E84A /* Pods-LiftWatch WatchKit App-acknowledgements.markdown */,
+				6FFA61444F56B2E1118F5131FDD31109 /* Pods-LiftWatch WatchKit App-acknowledgements.plist */,
+				344524EF064A1A0F0DF63F4D781B19E6 /* Pods-LiftWatch WatchKit App-dummy.m */,
+				2661A9C3278D89E54493BA17C28AD62D /* Pods-LiftWatch WatchKit App-frameworks.sh */,
+				E41924DFA8960E1A40B496E456DC20F6 /* Pods-LiftWatch WatchKit App-resources.sh */,
+				C26595B9E3CAC064E70C1E7DD8F8C8D3 /* Pods-LiftWatch WatchKit App-umbrella.h */,
+				E22EBA9F7974DC4E8200CD996D2FC84E /* Pods-LiftWatch WatchKit App.debug.xcconfig */,
+				D3B74960729247D9DA02114E891C4701 /* Pods-LiftWatch WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-LiftWatch WatchKit App";
+			path = "Target Support Files/Pods-LiftWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		FD9E2CBABDA1AB35BAD3C3F041262069 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				76720B026417625FB62285B73CECF0BF /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		705F3CF321235EF180F841097B2B818B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB00D367494F38A3B092E882EDE5480C /* Pods-LiftWatch WatchKit App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D6A222FB0B21AE366C3EFDB0B610324 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6662DF1EA56F0A3D9500ED3D7DF48A05 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FAA0FA81388856D3AC6480A693EF8A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E9B47BD60C857278B488034006E594 /* Pods-LiftWatch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC33ABEE2EA5CA1830E503FD9083C810 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE6D9B080773E2785301A16C71EE271 /* Pods-LiftWatch WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE71441BFAD6C324E34AAEAA0C3023B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B7CF5DC8471DEA2C00CA898AAB12033 /* Pods-LiftWatchTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3B15DF788A0FF80BE7F6187EFAFC41E4 /* Pods-LiftWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EA57CC82B446FD109E7858389F3432C /* Build configuration list for PBXNativeTarget "Pods-LiftWatch WatchKit Extension" */;
+			buildPhases = (
+				318FE5F9B74A87C2B0852BAEB6A44801 /* Sources */,
+				74B9BDDA8F474CF1B37BB27469FFAF16 /* Frameworks */,
+				CC33ABEE2EA5CA1830E503FD9083C810 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LiftWatch WatchKit Extension";
+			productName = "Pods-LiftWatch WatchKit Extension";
+			productReference = AD4F050AE5A9A5BE836F34634C7A2230 /* Pods_LiftWatch_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3DF61594E70867A13D4000AC2AC30748 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EAE7F320780768BBBBDA6234F1D1476 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				552E9AAAE2B3DD93FDB374F45B9CB2C7 /* Sources */,
+				61908A34DCEDE45DFB965B055DECBDD9 /* Frameworks */,
+				8D6A222FB0B21AE366C3EFDB0B610324 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 6DFE0D34280BDBC9F14CF3CC8DC5149A /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8DD40938E85688C605D68528E309C9C2 /* Pods-LiftWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39DECD38CBC178024AE23725FF3A837F /* Build configuration list for PBXNativeTarget "Pods-LiftWatchTests" */;
+			buildPhases = (
+				2F1B8E60336B7025A6014E810CDC21C9 /* Sources */,
+				C9120DCBCF7694EC7D3712FB6C373494 /* Frameworks */,
+				CE71441BFAD6C324E34AAEAA0C3023B2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9824E8AB9A042296BF14AE709D365736 /* PBXTargetDependency */,
+			);
+			name = "Pods-LiftWatchTests";
+			productName = "Pods-LiftWatchTests";
+			productReference = CD78543F03864B88F33916FBFFCC0ADC /* Pods_LiftWatchTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AAD41E390E89214E2870FF3DB26BC333 /* Pods-LiftWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57D314FB4A467CE88521F70E6BE84D6B /* Build configuration list for PBXNativeTarget "Pods-LiftWatch" */;
+			buildPhases = (
+				5E084CD036DDA0BFEADE277108F75264 /* Sources */,
+				F39317C8C8F004B52A0508A7352A009E /* Frameworks */,
+				A3FAA0FA81388856D3AC6480A693EF8A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91A2E10C32EC8E1E0A5B6CCCF00A3955 /* PBXTargetDependency */,
+			);
+			name = "Pods-LiftWatch";
+			productName = "Pods-LiftWatch";
+			productReference = B05C69F897E06FB597EC7B6AB59187A5 /* Pods_LiftWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F789424C68FECC251D81E6DF6F061B25 /* Pods-LiftWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EDE334CE8B779FC9D99E15E5F1F2E1E /* Build configuration list for PBXNativeTarget "Pods-LiftWatch WatchKit App" */;
+			buildPhases = (
+				44564242EAADB13B73F6CF613C727BD7 /* Sources */,
+				CA702DBB0F6D6368847DD5725F441BF0 /* Frameworks */,
+				705F3CF321235EF180F841097B2B818B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LiftWatch WatchKit App";
+			productName = "Pods-LiftWatch WatchKit App";
+			productReference = B9CF53F6A4D66024867D68A83E72A596 /* Pods_LiftWatch_WatchKit_App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DCC2FE27375F936C150EDEFF3F4716AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAD41E390E89214E2870FF3DB26BC333 /* Pods-LiftWatch */,
+				F789424C68FECC251D81E6DF6F061B25 /* Pods-LiftWatch WatchKit App */,
+				3B15DF788A0FF80BE7F6187EFAFC41E4 /* Pods-LiftWatch WatchKit Extension */,
+				8DD40938E85688C605D68528E309C9C2 /* Pods-LiftWatchTests */,
+				3DF61594E70867A13D4000AC2AC30748 /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F1B8E60336B7025A6014E810CDC21C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4685D0A9724D81E92FB4C564C6D9B1F1 /* Pods-LiftWatchTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		318FE5F9B74A87C2B0852BAEB6A44801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3951A5BDF2E531CABF916C185F2EEAD9 /* Pods-LiftWatch WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44564242EAADB13B73F6CF613C727BD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C137DC7038259D39275B94F51BFA04F /* Pods-LiftWatch WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		552E9AAAE2B3DD93FDB374F45B9CB2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99598427DA42DE3CF8D4724D29F643E3 /* Constraint.swift in Sources */,
+				0F9C1B85F4CA8D28D636B5424EA0FD12 /* ConstraintAttributes.swift in Sources */,
+				710F382E3B40FEF3E4E6D2A0132DF855 /* ConstraintConfig.swift in Sources */,
+				507540D860F144909EDE827239B34DA7 /* ConstraintConstantTarget.swift in Sources */,
+				CDB75ECE71D6171AB6360A4591D14C42 /* ConstraintDescription.swift in Sources */,
+				98E157FA655D3F61F188BFFF131F283D /* ConstraintDSL.swift in Sources */,
+				38EE60BA48A9F04E75C2141C69E05407 /* ConstraintInsets.swift in Sources */,
+				7853CB333426CF03667B42994F108907 /* ConstraintInsetTarget.swift in Sources */,
+				719BC2E9CF6A7755E753BCBF0BFA515F /* ConstraintItem.swift in Sources */,
+				FB25DD32383C708E6864A6E09DD3B3BA /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				47D14E38B17B631E138DEB32DC1A1961 /* ConstraintLayoutGuide.swift in Sources */,
+				B0DD61B7B71D89630180A907DE856CEC /* ConstraintLayoutGuideDSL.swift in Sources */,
+				2FBA2DB763F221CADE388430FC157AD9 /* ConstraintLayoutSupport.swift in Sources */,
+				410710CFC5B01851A8D4C8A2E153CAE0 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				E05A3F0651B590221DD4FEC89AA3FAC7 /* ConstraintMaker.swift in Sources */,
+				78A40984A32254B1FFABCCE53F4AFA4F /* ConstraintMakerEditable.swift in Sources */,
+				0564CBBF8DBAF43A4EDF1BAA632B6186 /* ConstraintMakerExtendable.swift in Sources */,
+				3C6E8AEA51BC13951F83CC856826E9F7 /* ConstraintMakerFinalizable.swift in Sources */,
+				BD9D78E8C5B13F5FE3F39C305E18AB2B /* ConstraintMakerPriortizable.swift in Sources */,
+				A64DFC40F3B12E7827E661063BCB7F21 /* ConstraintMakerRelatable.swift in Sources */,
+				4CF29B1BB43167D419F3801F24A3E791 /* ConstraintMultiplierTarget.swift in Sources */,
+				5FDECD3CE7FBA5D02C7EB34CC2778BA6 /* ConstraintOffsetTarget.swift in Sources */,
+				50027028CFADD614222EB9EEA620E9C3 /* ConstraintPriority.swift in Sources */,
+				667635E73398661D39185BBE499B4C73 /* ConstraintPriorityTarget.swift in Sources */,
+				9BF7CCE3975D229B2AC21DBAF22DC5C2 /* ConstraintRelatableTarget.swift in Sources */,
+				87E85F9389ED3B5036DC945C667632A3 /* ConstraintRelation.swift in Sources */,
+				76EF753963CB882112EA5261E4824168 /* ConstraintView+Extensions.swift in Sources */,
+				7EC63C49B438743A1D92DB46AE4C4DE9 /* ConstraintView.swift in Sources */,
+				9E556A42635601D2B2F8B62A87942E15 /* ConstraintViewDSL.swift in Sources */,
+				CC240CC4918F06AAA15DC4F1D02283B5 /* Debugging.swift in Sources */,
+				BBDA4CA95F320E6AC6415415EBB3BCEF /* LayoutConstraint.swift in Sources */,
+				4D77BCCC6CCF23040A4801BE6B2B31C5 /* LayoutConstraintItem.swift in Sources */,
+				4BF7CEE6A0243B0C73FE7C717BB1C8D9 /* SnapKit-dummy.m in Sources */,
+				B724F4B2456CA3967FBCF8418C6520EF /* Typealiases.swift in Sources */,
+				0ADF685729FB94F1BE87DFCAB33A6F6C /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E084CD036DDA0BFEADE277108F75264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A64B79BAF6E3FD134C0F2508CAEF593 /* Pods-LiftWatch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91A2E10C32EC8E1E0A5B6CCCF00A3955 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 3DF61594E70867A13D4000AC2AC30748 /* SnapKit */;
+			targetProxy = B446E83E993A96BD7209D30132237B0E /* PBXContainerItemProxy */;
+		};
+		9824E8AB9A042296BF14AE709D365736 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LiftWatch";
+			target = AAD41E390E89214E2870FF3DB26BC333 /* Pods-LiftWatch */;
+			targetProxy = 5B72F961F7464E1836D63FC77DCBD408 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		144E361551E75B5130734F59326304C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E22EBA9F7974DC4E8200CD996D2FC84E /* Pods-LiftWatch WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiftWatch WatchKit App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiftWatch WatchKit App/Pods-LiftWatch WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		17911218A77E062922A835CFB33CD2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBCD887A59B6DAEE4EDE39C15E1BBBCE /* Pods-LiftWatch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiftWatch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiftWatch/Pods-LiftWatch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2C6F35CCA3D57D1320DE6405010524C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B74960729247D9DA02114E891C4701 /* Pods-LiftWatch WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiftWatch WatchKit App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiftWatch WatchKit App/Pods-LiftWatch WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		2FB557AAF81492ED25C5B0054008B00E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11084A6BA20780B0A92EE054D45AD2B7 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4FCC37F0F4CFAAD8136B4C06B4AE40F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		5AC6D710BBE7C9943B3254A2679AEBD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A9D214453517CE960B590245CAC0E6 /* Pods-LiftWatchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiftWatchTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiftWatchTests/Pods-LiftWatchTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73CE7E56EFB9A834610CBECFF7A06168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B444D6B31834E16DA5E622AF6769A46 /* Pods-LiftWatch WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiftWatch WatchKit Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiftWatch WatchKit Extension/Pods-LiftWatch WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		9B9C20544CEFD292B90F0E32D519F697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0335B8E97D5EE68EAB298A0869ED1EEA /* Pods-LiftWatch.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiftWatch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiftWatch/Pods-LiftWatch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9367EA6800F1101813DD0A525AD27D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11084A6BA20780B0A92EE054D45AD2B7 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E36EC5194C31E6BA10AD582A9220D98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD741F504668624614D44EA7D0A6EE1 /* Pods-LiftWatchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiftWatchTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiftWatchTests/Pods-LiftWatchTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F241B82773A265804CB2F080B5199959 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		F71C6DD58A2F768C2BB8CF02F4FF5586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E0878ADF2E99AD5FC4FAFF18F67F08D /* Pods-LiftWatch WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiftWatch WatchKit Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiftWatch WatchKit Extension/Pods-LiftWatch WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FCC37F0F4CFAAD8136B4C06B4AE40F0 /* Debug */,
+				F241B82773A265804CB2F080B5199959 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EAE7F320780768BBBBDA6234F1D1476 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9367EA6800F1101813DD0A525AD27D6 /* Debug */,
+				2FB557AAF81492ED25C5B0054008B00E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39DECD38CBC178024AE23725FF3A837F /* Build configuration list for PBXNativeTarget "Pods-LiftWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AC6D710BBE7C9943B3254A2679AEBD6 /* Debug */,
+				E36EC5194C31E6BA10AD582A9220D98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57D314FB4A467CE88521F70E6BE84D6B /* Build configuration list for PBXNativeTarget "Pods-LiftWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9C20544CEFD292B90F0E32D519F697 /* Debug */,
+				17911218A77E062922A835CFB33CD2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EDE334CE8B779FC9D99E15E5F1F2E1E /* Build configuration list for PBXNativeTarget "Pods-LiftWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				144E361551E75B5130734F59326304C1 /* Debug */,
+				2C6F35CCA3D57D1320DE6405010524C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EA57CC82B446FD109E7858389F3432C /* Build configuration list for PBXNativeTarget "Pods-LiftWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F71C6DD58A2F768C2BB8CF02F4FF5586 /* Debug */,
+				73CE7E56EFB9A834610CBECFF7A06168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

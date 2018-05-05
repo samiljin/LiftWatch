@@ -24,8 +24,7 @@ class AccessRights {
     }
     
     private static let typesNeededForWriting = Set([
-        HKObjectType.workoutType(),
-        HKObjectType.quantityType(forIdentifier: .activeEnergyBurned)!
+        HKObjectType.workoutType()
     ])
     
     private static let typesNeededForReading = Set([
