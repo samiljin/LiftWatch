@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EEF0EFD6209CE3AE00A9BF11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0EFD5209CE3AE00A9BF11 /* AppDelegate.swift */; };
-		EEF0EFD8209CE3AE00A9BF11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0EFD7209CE3AE00A9BF11 /* ViewController.swift */; };
-		EEF0EFDB209CE3AE00A9BF11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF0EFD9209CE3AE00A9BF11 /* Main.storyboard */; };
+		EEF0EFD8209CE3AE00A9BF11 /* AccessRightsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0EFD7209CE3AE00A9BF11 /* AccessRightsVC.swift */; };
 		EEF0EFDD209CE3AF00A9BF11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF0EFDC209CE3AF00A9BF11 /* Assets.xcassets */; };
-		EEF0EFE0209CE3AF00A9BF11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF0EFDE209CE3AF00A9BF11 /* LaunchScreen.storyboard */; };
 		EEF0EFF0209CE3AF00A9BF11 /* LiftWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EEF0EFEF209CE3AF00A9BF11 /* LiftWatch WatchKit App.app */; };
 		EEF0EFF6209CE3AF00A9BF11 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF0EFF4209CE3AF00A9BF11 /* Interface.storyboard */; };
 		EEF0EFF8209CE3B000A9BF11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF0EFF7209CE3B000A9BF11 /* Assets.xcassets */; };
@@ -19,6 +17,11 @@
 		EEF0F004209CE3B000A9BF11 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0F003209CE3B000A9BF11 /* InterfaceController.swift */; };
 		EEF0F006209CE3B000A9BF11 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0F005209CE3B000A9BF11 /* ExtensionDelegate.swift */; };
 		EEF0F008209CE3B000A9BF11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEF0F007209CE3B000A9BF11 /* Assets.xcassets */; };
+		EEF0F01C209CE5F000A9BF11 /* AccessRights.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0F01B209CE5F000A9BF11 /* AccessRights.swift */; };
+		EEF0F01E209CED7100A9BF11 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0F01D209CED7100A9BF11 /* HealthManager.swift */; };
+		EEF0F022209D9F0E00A9BF11 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF0F021209D9F0E00A9BF11 /* HealthKit.framework */; };
+		EEF0F025209DA76D00A9BF11 /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF0F024209DA76D00A9BF11 /* TutorialVC.swift */; };
+		EEF0F027209DAAF300A9BF11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEF0F026209DAAF300A9BF11 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,10 +76,8 @@
 /* Begin PBXFileReference section */
 		EEF0EFD2209CE3AE00A9BF11 /* LiftWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiftWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF0EFD5209CE3AE00A9BF11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EEF0EFD7209CE3AE00A9BF11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EEF0EFDA209CE3AE00A9BF11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEF0EFD7209CE3AE00A9BF11 /* AccessRightsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessRightsVC.swift; sourceTree = "<group>"; };
 		EEF0EFDC209CE3AF00A9BF11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EEF0EFDF209CE3AF00A9BF11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEF0EFE1209CE3AF00A9BF11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEF0EFE6209CE3AF00A9BF11 /* LiftWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF0EFEF209CE3AF00A9BF11 /* LiftWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiftWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +89,12 @@
 		EEF0F005209CE3B000A9BF11 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		EEF0F007209CE3B000A9BF11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEF0F009209CE3B000A9BF11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF0F01B209CE5F000A9BF11 /* AccessRights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessRights.swift; sourceTree = "<group>"; };
+		EEF0F01D209CED7100A9BF11 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		EEF0F01F209D9F0E00A9BF11 /* LiftWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiftWatch.entitlements; sourceTree = "<group>"; };
+		EEF0F021209D9F0E00A9BF11 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		EEF0F024209DA76D00A9BF11 /* TutorialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
+		EEF0F026209DAAF300A9BF11 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF0F022209D9F0E00A9BF11 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +130,7 @@
 				EEF0EFF3209CE3AF00A9BF11 /* LiftWatch WatchKit App */,
 				EEF0F002209CE3B000A9BF11 /* LiftWatch WatchKit Extension */,
 				EEF0EFD3209CE3AE00A9BF11 /* Products */,
+				EEF0F020209D9F0E00A9BF11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,12 +148,13 @@
 		EEF0EFD4209CE3AE00A9BF11 /* LiftWatch */ = {
 			isa = PBXGroup;
 			children = (
+				EEF0F01A209CE59000A9BF11 /* Utils */,
+				EEF0F023209D9F9F00A9BF11 /* Controllers */,
+				EEF0F01F209D9F0E00A9BF11 /* LiftWatch.entitlements */,
 				EEF0EFD5209CE3AE00A9BF11 /* AppDelegate.swift */,
-				EEF0EFD7209CE3AE00A9BF11 /* ViewController.swift */,
-				EEF0EFD9209CE3AE00A9BF11 /* Main.storyboard */,
 				EEF0EFDC209CE3AF00A9BF11 /* Assets.xcassets */,
-				EEF0EFDE209CE3AF00A9BF11 /* LaunchScreen.storyboard */,
 				EEF0EFE1209CE3AF00A9BF11 /* Info.plist */,
+				EEF0F026209DAAF300A9BF11 /* LaunchScreen.storyboard */,
 			);
 			path = LiftWatch;
 			sourceTree = "<group>";
@@ -168,6 +178,32 @@
 				EEF0F009209CE3B000A9BF11 /* Info.plist */,
 			);
 			path = "LiftWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EEF0F01A209CE59000A9BF11 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EEF0F01B209CE5F000A9BF11 /* AccessRights.swift */,
+				EEF0F01D209CED7100A9BF11 /* HealthManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EEF0F020209D9F0E00A9BF11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEF0F021209D9F0E00A9BF11 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEF0F023209D9F9F00A9BF11 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEF0EFD7209CE3AE00A9BF11 /* AccessRightsVC.swift */,
+				EEF0F024209DA76D00A9BF11 /* TutorialVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +292,11 @@
 				TargetAttributes = {
 					EEF0EFD1209CE3AE00A9BF11 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					EEF0EFE5209CE3AF00A9BF11 = {
 						CreatedOnToolsVersion = 9.3;
@@ -295,9 +336,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEF0EFE0209CE3AF00A9BF11 /* LaunchScreen.storyboard in Resources */,
 				EEF0EFDD209CE3AF00A9BF11 /* Assets.xcassets in Resources */,
-				EEF0EFDB209CE3AE00A9BF11 /* Main.storyboard in Resources */,
+				EEF0F027209DAAF300A9BF11 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,8 +372,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEF0EFD8209CE3AE00A9BF11 /* ViewController.swift in Sources */,
+				EEF0EFD8209CE3AE00A9BF11 /* AccessRightsVC.swift in Sources */,
 				EEF0EFD6209CE3AE00A9BF11 /* AppDelegate.swift in Sources */,
+				EEF0F01C209CE5F000A9BF11 /* AccessRights.swift in Sources */,
+				EEF0F025209DA76D00A9BF11 /* TutorialVC.swift in Sources */,
+				EEF0F01E209CED7100A9BF11 /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,22 +417,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EEF0EFD9209CE3AE00A9BF11 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EEF0EFDA209CE3AE00A9BF11 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EEF0EFDE209CE3AF00A9BF11 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EEF0EFDF209CE3AF00A9BF11 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		EEF0EFF4209CE3AF00A9BF11 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -601,6 +628,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LiftWatch/LiftWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DT4FYLLL62;
 				INFOPLIST_FILE = LiftWatch/Info.plist;
@@ -619,6 +647,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LiftWatch/LiftWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DT4FYLLL62;
 				INFOPLIST_FILE = LiftWatch/Info.plist;

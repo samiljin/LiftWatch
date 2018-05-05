@@ -8,11 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AccessRightsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if AccessRights.isAllGiven { return }
+
+        AccessRights.request {
+            success, error in
+        }
     }
 
     override func didReceiveMemoryWarning() {
